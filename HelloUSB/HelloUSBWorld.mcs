@@ -1,0 +1,106 @@
+
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+
+[File000]
+Location=C:\windows\profiles\wailok\Desktop\HelloUSBWorld2\Objects\usb_descriptors.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)|.\Objects||$(AINDIR)||$(INCDIR)|.;..\microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|usb_descriptors.c|main.c|..\Microchip\Usb\usb_device.c|..\Microchip\Usb\CDC Device Driver\usb_function_cdc.c|HellowUSBWorld.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+
+[File001]
+Location=C:\windows\profiles\wailok\Desktop\HelloUSBWorld2\Objects\main.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)|.\Objects||$(AINDIR)||$(INCDIR)|.;..\microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|usb_descriptors.c|main.c|..\Microchip\Usb\usb_device.c|..\Microchip\Usb\CDC Device Driver\usb_function_cdc.c|HellowUSBWorld.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+
+[File002]
+Location=C:\windows\profiles\wailok\Desktop\HelloUSBWorld2\Objects\usb_device.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)|.\Objects||$(AINDIR)||$(INCDIR)|.;..\microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|usb_descriptors.c|main.c|..\Microchip\Usb\usb_device.c|..\Microchip\Usb\CDC Device Driver\usb_function_cdc.c|HellowUSBWorld.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+
+[File003]
+Location=C:\windows\profiles\wailok\Desktop\HelloUSBWorld2\Objects\usb_function_cdc.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)|.\Objects||$(AINDIR)||$(INCDIR)|.;..\microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|usb_descriptors.c|main.c|..\Microchip\Usb\usb_device.c|..\Microchip\Usb\CDC Device Driver\usb_function_cdc.c|HellowUSBWorld.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+
+[File004]
+Location=C:\windows\profiles\wailok\Desktop\HelloUSBWorld2\Objects\HellowUSBWorld.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)|.\Objects||$(AINDIR)||$(INCDIR)|.;..\microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|usb_descriptors.c|main.c|..\Microchip\Usb\usb_device.c|..\Microchip\Usb\CDC Device Driver\usb_function_cdc.c|HellowUSBWorld.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+
+[File005]
+Location=C:\windows\profiles\wailok\Desktop\HelloUSBWorld2\HelloUSBWorld.elf
+Folder=Output
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={C68E5105-1196-4333-A0BF-3DC57271E614}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)|.\Objects||$(AINDIR)||$(INCDIR)|.;..\microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|usb_descriptors.c|main.c|..\Microchip\Usb\usb_device.c|..\Microchip\Usb\CDC Device Driver\usb_function_cdc.c|HellowUSBWorld.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map"
+TraceCmdString=
+DebugOptions=
+
+[File006]
+Location=C:\windows\profiles\wailok\Desktop\HelloUSBWorld2\HelloUSBWorld.hex
+Folder=Output
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={C68E5105-1196-4333-A0BF-3DC57271E614}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)|.\Objects||$(AINDIR)||$(INCDIR)|.;..\microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|usb_descriptors.c|main.c|..\Microchip\Usb\usb_device.c|..\Microchip\Usb\CDC Device Driver\usb_function_cdc.c|HellowUSBWorld.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map"
+TraceCmdString=
+DebugOptions=
+
+[TOOL_LOC_STAMPS]
+tool_loc{430F471F-7ECB-4852-A80D-DEF9A5C8E751}=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+tool_loc{C68E5105-1196-4333-A0BF-3DC57271E614}=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-ld.exe

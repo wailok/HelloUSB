@@ -1,0 +1,1 @@
+For API documentation help files, please refer to the "<Install Directory>\Microchip\Help" folder.

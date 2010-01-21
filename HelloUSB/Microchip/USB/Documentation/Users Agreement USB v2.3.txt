@@ -1,0 +1,84 @@
+IMPORTANT: 
+MICROCHIP TECHNOLOGY INC. ("COMPANY") IS WILLING TO LICENSE USB FRAMEWORK SOFTWARE AND ACCOMPANYING DOCUMENTATION OFFERED TO YOU ONLY ON THE CONDITION THAT YOU ACCEPT ALL OF THE FOLLOWING TERMS.  TO ACCEPT THE TERMS OF THIS LICENSE, CLICK "I ACCEPT" AND PROCEED WITH THE DOWNLOAD OR INSTALL.  IF YOU DO NOT ACCEPT THESE LICENSE TERMS, CLICK "I DO NOT ACCEPT," AND DO NOT DOWNLOAD OR INSTALL THIS SOFTWARE. 
+
+NON-EXCLUSIVE SOFTWARE LICENSE AGREEMENT
+FOR MICROCHIP USB FRAMEWORK SOFTWARE 
+
+IMPORTANT - READ CAREFULLY.
+
+This Nonexclusive Software License Agreement (“Agreement”) is a contract between you, either as an individual or a single entity, (“Licensee”) and Microchip Technology Incorporated (“Company”) for Company’s USB Framework software which may include firmware source code (“Software”) and accompanying proprietary documentation (“Documentation”). 
+
+The Software and Documentation are licensed under this Agreement and not sold.  The Software and Documentation are protected by U.S. copyright laws and international copyright treaties, and other intellectual property laws and treaties.
+
+In consideration of the mutual covenants of the parties and for the consideration received herein, the parties hereby agree as follows:
+
+1.	Ownership of Proprietary Rights.  Except as expressly licensed herein, Company retains all right, title and interest in and to the Software (“Proprietary Rights”), including, but not limited to: (i) patent, copyright, trade secret and similar right in the Software and underlying technology; (ii) all copies and derivative works thereof (by whomever produced) and (iii) the Documentation.  Licensee shall have no right to modify, use, copy, license, create derivative works of, sell, assign or otherwise transfer all or any portion of the Software or the Proprietary Rights for the Software except as expressly set forth in the Agreement.  Except to the extent provided in this Agreement, all uses of the Proprietary Rights of the Software hereunder, including hardware, firmware and software implementations of the technology, will inure to the benefit of the Company, and any all equities or rights in and to the Proprietary Rights of the Software resulting from Licensee's acts or endeavors hereunder will automatically transfer to the Company. 
+
+2.	License Grant.
+	
+(a)	Subject to the terms of this Agreement, Company grants, strictly to Licensee, a personal, worldwide, fully paid-up, non-exclusive, non-transferable, limited license to reproduce, market, license, distribute, use and create derivative works of the Software, solely for incorporation into a product manufactured by Licensee which only implements the Software on proprietary products manufactured by Company and purchased by Licensee from Company or Company’s authorized distributor (a “Device”).  The product produced by the Licensee which integrates a Device programmed with the Software shall hereafter be called a “Licensee Product.”  The Company also grants, strictly to Licensee, a personal, worldwide, fully paid-up, non-exclusive, non-transferable, limited license to use the Documentation in support of Licensee’s authorized use of the Software.
+
+(b)	Subject to the terms of this Agreement, Licensee may grant a limited sublicense to a third party (“Sublicensee”) of the rights granted to Licensee in Section 2(a) above with the following additional limitations.  Such sublicense shall permit the Sublicensee to use the Software only as described below in subparagraphs 2(b)(i) through 2(b)(v) and only IF such Sublicensee expressly agrees in writing to be bound by terms of confidentiality and limited use that are no broader in scope and duration than the confidentiality and limited use terms of this Agreement:
+(i)	Sublicensee may modify source code solely for use by Licensee.
+(ii)	Sublicensee may program Software into Devices for Licensee.
+(iii)	Sublicensee may use the Software to develop and/or manufacture Licensee Products.
+(iv)	Sublicensee may use the Software to develop and/or manufacture products where either: (x) the sublicensed Software contains source code modified or otherwise optimized by Licensee for Sublicensee use and the Software is implemented only on proprietary products manufactured by Company and purchased from Company or Company’s authorized distributor; or (y) the sublicensed Software is programmed into a Device by Licensee on behalf of such Sublicensee.
+(v)	Sublicensee may use the Documentation in support of Sublicensee’s authorized use of the Software in conformance with this Section 2(b).
+
+Sublicensee shall have no right to further sublicense any right granted under this Agreement.
+
+(c)	Authorized representatives of the Company shall have the right to reasonably inspect Licensee’s or Sublicensee’s premises and to audit Licensee’s or Sublicensee’s records and inventory of products in which the Software is implemented, whether located on Licensee’s or Sublicensee’s premises or elsewhere at any time, announced or unannounced, and in its sole and absolute discretion, in order to ensure Licensee's and Sublicensee’s adherence to the terms of this Agreement.
+
+3.	Licensee Obligations.
+
+(a)	Licensee will not (i) engage in unauthorized sublicensing, disclosure or distribution of Software or Documentation, (ii) use all or any portion of the Software or the Proprietary Rights of the Software except in conjunction with a Device; or (iii) reverse engineer (by disassembly, decompilation or otherwise) the Software.  For purposes of clarity, Licensee’s use of the Software binary driver file on a Windows® operating system to interface with a Device does not violate this Section 3(a). 
+
+(b)	Licensee will not, during the term of this Agreement or any time thereafter, attack, dispute or contest, directly or indirectly, the Company's exclusive right, title and interest in or to the Proprietary Rights of the Software or the validity of the Company's ownership thereof, nor will Licensee assist or encourage others to do so.
+
+4.	Indemnification.
+
+(a)	Licensee Indemnity.  Licensee will defend, indemnify and hold Company harmless from and against any and all claims, losses, liabilities, damages, costs, and expenses (including attorney's fees) directly or indirectly arising from or related to (i) any use or disclosure of the Software not permitted under this Agreement, (ii) any use of the Software in combination with other products, equipment, software or data not supplied by Company, including but not limited to use in the Licensee Product, (iii) any modification of the Software made by any person other than Company, or (iv) any products liability claims with respect to the Licensee Product.  
+
+(b) 	THE FOREGOING STATES THE SOLE AND EXCLUSIVE REMEDY AND LIABILITY OF THE PARTIES FOR INTELLECTUAL PROPERTY INFRINGEMENT.
+	
+5.	Term and Termination.
+
+(a)	Term.  This Agreement and the license granted herein shall be effective from the date of acceptance of the Agreement, or first installation, copy or use of the Software, whichever event occurs first.  The term of this Agreement shall run until terminated in accordance with this Section 5.
+
+(b)	Termination for Cause.  This Agreement may be terminated if either party materially fails to perform or comply with any provisions of this Agreement.  In the event of Licensee’s breach, termination shall be effective immediately without notice from Company.
+
+(c)	Termination for Convenience.  This Agreement may be terminated by either party for convenience upon 60 days written notice.
+
+(d)	Effects of Termination.  Upon termination, Licensee shall immediately discontinue all use of the Software, including but limited to inclusion in any Licensee Product, and shall destroy any tangible media Licensee has on which the Software or Documentation exist, and remove the Software and Documentation from any and all systems.
+
+6.	Injunctive Relief.  Licensee agrees that the provisions in this Agreement regarding unauthorized use of the Software and nondisclosure are necessary to protect the legitimate business interests of the Company.  Licensee also agrees that monetary damages alone cannot adequately compensate the Company if there is a violation of such provisions by Licensee and that injunctive relief against Licensee is essential for the protection of the Company.  Licensee agrees, therefore, that if the Company alleges that Licensee has breached or violated such provisions then, in addition to any other remedies it may have, the Company will have the right to petition a court of competent jurisdiction, with the requirement for the posting of a bond, for injunctive relief against Licensee in addition to all other remedies at law or in equity.
+	
+7.	Confidentiality.  Licensee agrees that all source code, source documentation and underlying inventions, algorithms, know-how and ideas relating to the Software and the Documentation are the Company's proprietary information ("Proprietary Information").  Except as expressly and unambiguously allowed herein, the Licensee will hold in confidence and not use or disclose any Proprietary Information and shall similarly bind its employees and Subcontractors in writing.  Proprietary Information shall not include information that (i) is in or enters the public domain without breach of this Agreement and through no fault of the receiving party; (ii) the receiving party was legally in possession of prior to receiving it; (iii) the receiving party can demonstrate was developed by it independently and without use of or reference to the disclosing party’s Proprietary Information; or (iv) the receiving party receives from a third party without restriction on disclosure.  If a party is required to disclose Proprietary Information by law, court order, or government agency, such disclosure shall not be deemed a breach of this Agreement.  Licensee's obligation under this Section 7 will survive for a period of twenty (20) years following the expiration or termination of this Agreement.
+
+8.	Warranties and Disclaimers.  THE SOFTWARE AND DOCUMENTATION ARE PROVIDED “AS IS” WITHOUT  WARRANTY OF ANY KIND, EITHER EXPRESS OR  IMPLIED, INCLUDING WITHOUT LIMITATION, ANY  WARRANTY OF MERCHANTABILITY, TITLE, NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE.  LICENSEE ASSUMES THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF THE SOFTWARE AND DOCUMENTATION, AND COMPANY ASSUMES NO RESPONSIBILITY FOR THE ACCURACY OR APPLICATION OR OF ERRORS OR OMISSIONS IN THE SOFTWARE.  THE LIMITED REMEDIES SET FORTH HEREIN SHALL APPLY NOTWITHSTANDING FAILURE OF THEIR ESSENTIAL PURPOSE.
+
+10.	Limited Liability.  IN NO EVENT SHALL COMPANY BE LIABLE OR OBLIGATED UNDER CONTRACT, NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, BREACH OF WARRANTY, OR OTHER LEGAL OR EQUITABLE THEORY FOR ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES INCLUDING BUT NOT LIMITED TO INCIDENTAL, SPECIAL, INDIRECT, PUNITIVE OR CONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA, COST OF PROCUREMENT OF SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES (INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF), OR OTHER SIMILAR COSTS.  The aggregate and cumulative liability of Company for damages hereunder will in no event exceed $100 and Licensee acknowledges that the foregoing limitations are reasonable and an essential part of this Agreement.
+
+11.	General.
+
+(a)	Electronic Notices and Requests. When Licensee visits Company’s website or send e-mails to the Company, Licensee ise communicating with Company electronically. Licensee hereby consents to receive communications from Company electronically.  Company will communicate with Licensee by e-mail or by posting notices on www.Microchip.com.  Licensee agrees that all agreements, notices, disclosures and other communications that Company provide to Licensee electronically satisfy any legal requirement that such communications be in writing.  In giving notice to Company, Licensee will address notices to Legal.Department@Microchip.com. and include Licensee’s name, company name, physical address and phone number, and include “USB Framework Software” in the subject line. 
+
+(b)	Governing Law.  THIS AGREEMENT SHALL BE GOVERNED BY AND CONSTRUED UNDER THE LAWS OF THE STATE OF ARIZONA AND THE UNITED STATES WITHOUT REGARD TO CONFLICTS OF LAWS PROVISIONS.   THEREOF AND WITHOUT REGARD TO THE UNITED NATIONS CONVENTION ON CONTRACTS FOR THE INTERNATIONAL SALE OF GOODS.  The sole jurisdiction and venue for actions related to the subject matter hereof shall be the state and federal courts located in Arizona. 
+	
+(c)	Attorneys' Fees.  If either the Company or Licensee employs attorneys to enforce any rights arising out of or relating to this Agreement, the prevailing party shall be entitled to recover its reasonable attorneys' fees, costs and other expenses.
+
+(d)	Entire Agreement. This Agreement shall constitute the entire agreement between the parties with respect to the subject matter hereof.  It shall not be modified except by a written agreement signed by an authorized representative of the Company.  
+
+(e)	Severability.  If any provision of this Agreement shall be held by a court of competent jurisdiction to be illegal, invalid or unenforceable, that provision shall be limited or eliminated to the minimum extent necessary so that this Agreement shall otherwise remain in full force and effect and enforceable.
+	
+(f)	Waiver.  No waiver of any breach of any provision of this Agreement shall constitute a waiver of any prior, concurrent or subsequent breach of the same or any other provisions hereof, and no waiver shall be effective unless made in writing and signed by an authorized representative of the waiving party.
+	
+(g)	Export Regulation. Each party hereby agrees to comply with all export laws and restrictions and regulations of the Department of Commerce or other United States or foreign agency or authority.
+
+(h)	Survival.  The indemnities herein, and any right of action for breach of this Agreement prior to termination shall survive any termination of this Agreement.
+
+(i)	Assignment.  Neither this Agreement nor any rights, licenses or obligations hereunder, may be assigned by Licensee without the prior written approval of the Company.
+
+
+License Rev. 02-032907
+

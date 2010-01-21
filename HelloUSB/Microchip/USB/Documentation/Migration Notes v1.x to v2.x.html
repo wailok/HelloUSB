@@ -1,0 +1,895 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List
+href="Migration%20Notes%20v1.x%20to%20v2.x_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="Migration%20Notes%20v1.x%20to%20v2.x_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Migration from Microchip USB firmware framework v1</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="country-region"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>C12109</o:Author>
+  <o:LastAuthor>C12109</o:LastAuthor>
+  <o:Revision>54</o:Revision>
+  <o:TotalTime>1170</o:TotalTime>
+  <o:Created>2008-03-30T19:43:00Z</o:Created>
+  <o:LastSaved>2008-06-04T17:19:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1938</o:Words>
+  <o:Characters>10410</o:Characters>
+  <o:Company>Microchip Technology Inc</o:Company>
+  <o:Lines>306</o:Lines>
+  <o:Paragraphs>132</o:Paragraphs>
+  <o:CharactersWithSpaces>12216</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>90</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 65.95pt 1.0in 65.95pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><u><span style='font-size:16.0pt;font-family:Arial'>Migration notes -
+Microchip USB firmware framework v1.x to v2.x<o:p></o:p></span></u></b></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><!--[if supportFields]><span
+style='font-family:Arial'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>TOC \o &quot;1-3&quot; \n \h \z \u <span
+style='mso-element:field-separator'></span></span><![endif]--><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc198719544">Directory
+Structure</a></span></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc198719545">usb_config.h</a></span></span><span
+style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc198719546">HardwareProfile.h</a></span></span><span
+style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc198719547">Project
+– Include options requirement</a></span></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc198719548">Call
+back functions</a></span></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc198719549">Enabling
+endpoints</a></span></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc198719550">API
+changes - Using handles</a></span></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc198719551">Generic
+Driver</a></span></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc198719552">Data
+buffering removed</a></span></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc198719553">Buffer
+location - Sending data from user space</a></span></span><span
+style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc198719554">Configuration
+Descriptor</a></span></span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc198719555">Trademarks:</a></span></span><span
+style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoPlainText><!--[if supportFields]><span style='font-family:Arial'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-family:
+Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h2><a name="_Toc198719544">Directory Structure</a></h2>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>The directory structure
+of the USB firmware framework has changed from the v1.x releases.<span
+style='mso-spacerun:yes'>  </span>This change helps simplify the process of
+combining several of the other software solutions provided by Microchip.<span
+style='mso-spacerun:yes'>  </span>The new directory structure also helps
+designate which files are part of user code and which files <span class=GramE>are
+part</span> of the stack.<span style='mso-spacerun:yes'>  </span>The new
+directory structure looks like the following.<span style='mso-spacerun:yes'> 
+</span>Note that the stack is no longer required to be installed in the
+MCHPFSUSB folder in the root directory.<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'>.\&lt;Install
+Directory&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:1'>            </span>\Microchip<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:2'>                        </span>\Include<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:2'>                        </span>\Help<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:2'>                        </span>\USB<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:3'>                                    </span>\Documentation<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:1'>            </span>\USB Device - <span class=SpellE>Bootloaders</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:1'>            </span>\USB Device – HID - Mouse<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:1'>            </span>\USB Device – HID – Simple Custom
+Demo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:1'>            </span>\USB Device – Mass Storage – SD Card
+data logger<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:1'>            </span>\USB Device – Mass Storage – SD Card
+reader<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:1'>            </span>\USB Device – MCHPUSB - Generic
+Driver Demo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:1'>            </span>\USB Host – Mass Storage - Data
+Logger<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:1'>            </span>\USB PC – WM_DEVICECHANGE Demo<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:1'>            </span>\USB Precompiled Demos<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:1'>            </span>\USB Tools<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0in;margin-bottom:5.0pt;
+margin-left:0in'><span style='font-size:10.0pt;font-family:Arial'><span
+style='mso-tab-count:1'>            </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>The “&lt;Install
+Directory&gt;\Microchip” folder contains the stack and documentation required
+to design a USB application.<span style='mso-spacerun:yes'>  </span>Also
+contained in the “&lt;Install Directory&gt;” are several example projects.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>The “&lt;Install
+Directory&gt;\USB Tools” contains some PC software tools.<span
+style='mso-spacerun:yes'>  </span>This directory contains the Microchip custom
+driver, the driver source code, and a couple of PC examples how to link the
+driver into PC software.<span style='mso-spacerun:yes'>  </span>This folder
+also contains the configuration tool required for generating the embedded host
+configuration files required to run the stack.<span style='mso-spacerun:yes'> 
+</span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>The “&lt;Install
+Directory&gt;\Microchip\USB\Documentation” contains documentation for using the
+demos, release notes, and other documentation pertaining to the release and
+tools available.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>The “&lt;Install
+Directory&gt;\Microchip\Help” folder contains .<span class=SpellE>chm</span>
+help files that describe in detail the API of the embedded host stack.<span
+style='mso-spacerun:yes'>  </span>If you have installed other Microchip
+libraries into the same &lt;Install Directory&gt; then there may be other help
+files located in the directory.<o:p></o:p></span></p>
+
+<h2><a name="_Toc198719545"></a><span class=SpellE><span style='mso-bookmark:
+_Toc198719545'>usb_config.h</span></span><span style='mso-bookmark:_Toc198719545'></span></h2>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>The <span class=SpellE>usb_config.h</span>
+file contains definitions that determine how the stack will function.<span
+style='mso-spacerun:yes'>  </span>This file defines if the device stack or the
+host stack will be enabled, what ping-pong configuration is used, which class
+drivers are enabled, and various other options.<span style='mso-spacerun:yes'> 
+</span>Please review the example configuration files for more details about the
+options available.<span style='mso-spacerun:yes'>  </span>The <span
+class=SpellE>usb_config.h</span> file for embedded host applications is
+generated by the USBConfig.exe tool provided in the “&lt;Install
+Directory&gt;\Microchip\USB\Utilities\<span class=SpellE>USBConfig</span>”
+folder.<o:p></o:p></span></p>
+
+<h2><a name="_Toc198719546"></a><span class=SpellE><span style='mso-bookmark:
+_Toc198719546'>HardwareProfile.h</span></span><span style='mso-bookmark:_Toc198719546'></span></h2>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>For many of the examples
+the hardware configuration is different for each of the hardware platforms
+available.<span style='mso-spacerun:yes'>  </span>The <span class=SpellE>HardwareProfile.h</span>
+file helps abstract out the hardware differences.<span
+style='mso-spacerun:yes'>  </span>This file defines which board is being used
+based on the processor selected in MPLAB.<span style='mso-spacerun:yes'> 
+</span>When using the stack to develop new applications, it is important to
+change the <span class=SpellE>HardwareProfile.h</span> file to use custom
+boards.<span style='mso-spacerun:yes'>  </span>This can be done by either
+removing the predefined settings or by adding a definition for </span>DEMO_BOARD<span
+style='font-family:Arial'> at the top of the file.<o:p></o:p></span></p>
+
+<h2><a name="_Toc198719547">Project – Include options requirement</a></h2>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>Because of the changes in
+the directory structure, there are some changes that are required in the
+“Project-&gt;Build Options-&gt;Project” include path settings.<span
+style='mso-spacerun:yes'>  </span>The following paths need to be added to the
+include path:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>..\Include<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>..\..\Include<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>..\Microchip\Include<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>..\..\&lt;Application
+Folder&gt;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>..\..\..\&lt;Application
+Folder&gt;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>Here are the settings
+used for one of the example projects:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial'><img border=0 width=446
+height=544 id="_x0000_i1025" src="images/include.JPG"><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>If the project and source
+files are not located in the &lt;Install Directory&gt;\&lt;Application
+Folder&gt; but instead of folder like &lt;Install
+Directory&gt;\&lt;Folder&gt;\&lt;Application Folder&gt; then the above include
+paths need to be changed so that each have one more “..\” and that the two
+includes that are using the &lt;Application Folder&gt; also include the
+additional &lt;Folder&gt; in their path.<span style='mso-spacerun:yes'> 
+</span>For example:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>..\..\Include<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>..\..\..\Include<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>..\..\Microchip\Include<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>..\..\&lt;Folder&gt;\&lt;Application
+Folder&gt;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>..\..\..\&lt;Folder&gt;\&lt;Application
+Folder&gt;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h2><a name="_Toc198719548">Call back functions</a></h2>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>The v2.1 stack has
+several call back functions that need to be defined in the user code.<span
+style='mso-spacerun:yes'>  </span>These functions are provided to allow the
+user to define their course of action when certain USB events occur without
+having to modify the stack code itself.<span style='mso-spacerun:yes'> 
+</span>The following functions need to be defined.<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span class=GramE>void</span> <span class=SpellE>USBCBSuspend</span>(void)</p>
+
+<p class=MsoPlainText><span class=GramE>void</span> <span class=SpellE>USBCBWakeFromSuspend</span>(void)</p>
+
+<p class=MsoPlainText><span class=GramE>void</span> <span class=SpellE>USBCB_SOF_Handler</span>(void)</p>
+
+<p class=MsoPlainText><span class=GramE>void</span> <span class=SpellE>USBCBErrorHandler</span>(void)</p>
+
+<p class=MsoPlainText><span class=GramE>void</span> <span class=SpellE>USBCBCheckOtherReq</span>(void)</p>
+
+<p class=MsoPlainText><span class=GramE>void</span> <span class=SpellE>USBCBStdSetDscHandler</span>(void)</p>
+
+<p class=MsoPlainText><span class=GramE>void</span> <span class=SpellE>USBCBInitEP</span>(void)</p>
+
+<p class=MsoPlainText><span class=GramE>void</span> <span class=SpellE>USBCBSendResume</span>(void)</p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>Some of the device
+classes require the use of the endpoint 0.<span style='mso-spacerun:yes'> 
+</span>These functions may require the use of the <span class=SpellE><span
+class=GramE>USBCBCheckOtherReq</span></span><span class=GramE>(</span>)
+function to call back into the device driver code.<span
+style='mso-spacerun:yes'>  </span>For an example of this use, review any of the
+Mass Storage examples.<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>All applications will
+need to take action in the </span><span class=SpellE><span class=GramE>USBCBSuspend</span></span><span
+class=GramE>(</span>)<span style='font-family:Arial'> and </span><span
+class=SpellE>USBCBWakeFromSuspend</span>()<span style='font-family:Arial'>
+functions in order to insure they meet the maximum current requirements during
+suspend.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>The </span><span
+class=SpellE><span class=GramE>USBCBInitEP</span></span><span class=GramE>(</span>)<span
+style='font-family:Arial'> is also required by all of the class drivers to
+enable the endpoints that they use.<span style='mso-spacerun:yes'>  </span>This
+can be done with the </span><span class=SpellE><span class=GramE>USBEnableEndpoint</span></span><span
+class=GramE>(</span>)<span style='font-family:Arial'> function.<span
+style='mso-spacerun:yes'>  </span>Any IN endpoints not only need to enable the
+endpoints but also need to arm the IN endpoints so that they are ready to
+receive data in that input.<span style='mso-spacerun:yes'>  </span>Enabling the
+endpoint can be done using the class specific functions.<o:p></o:p></span></p>
+
+<h2><a name="_Toc198719549">Enabling endpoints</a></h2>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>As mentioned in the above
+call back functions section, it is important that the user device in the </span><span
+class=SpellE><span class=GramE>USBCBInitEP</span></span><span class=GramE>(</span>)<span
+style='font-family:Arial'> function the appropriate endpoint enable
+functions.<span style='mso-spacerun:yes'>  </span>It is also important to
+enable any IN endpoints.<span style='mso-spacerun:yes'>  </span>This allows the
+endpoint to be ready to receive data as soon as the host sends a transaction to
+that endpoint.<span style='mso-spacerun:yes'>  </span>Please see the provided
+demo projects.<o:p></o:p></span></p>
+
+<h2><a name="_Toc198719550">API changes - Using handles</a></h2>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>The v2.x USB stack
+defines the concept of a </span>USB_HANDLE<span style='font-family:Arial'>.<span
+style='mso-spacerun:yes'>  </span>The handle is used to determine if a transfer
+is complete.<span style='mso-spacerun:yes'>  </span>A handle is returned for
+each transmission sent out.<span style='mso-spacerun:yes'>  </span>If ping-pong
+is enabled this means that two handles per endpoint and direction combination
+are possible.<span style='mso-spacerun:yes'>  </span>Each handle should be
+saved to a different variable so each can be checked independently.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>To check to see if a
+transfer complete, pass the handle to the </span><span class=SpellE><span
+class=GramE>USBHandleBusy</span></span><span class=GramE>(</span>)<span
+style='font-family:Arial'> function.<span style='mso-spacerun:yes'> 
+</span>This function will return </span>FALSE<span style='font-family:Arial'>
+if the transfer is still in process and </span>TRUE<span style='font-family:
+Arial'> if the transfer is complete.<span style='mso-spacerun:yes'>  </span>The
+class driver specific transmit and receive functions should return the </span>USB_HANDLE<span
+style='font-family:Arial'>.<span style='mso-spacerun:yes'>  </span>For example:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText>USB_HANDLE <span class=SpellE>USBGenericInHandle</span> =
+0;</p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><span class=GramE>if(</span>!<span class=SpellE>USBHandleBusy</span>(<span
+class=SpellE>USBGenericInHandle</span>))</p>
+
+<p class=MsoPlainText>{</p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>//Transfer <span
+class=GramE>counter</span> bytes of data from <span class=SpellE>INPacket</span>
+on endpoint USBGEN_EP_NUM</p>
+
+<p class=MsoPlainText style='text-indent:.5in'><span class=SpellE>USBGenericInHandle</span>
+= <span class=SpellE><span class=GramE>USBGenWrite</span></span><span
+class=GramE>(</span>USBGEN_EP_NUM,(BYTE*)&amp;<span class=SpellE>INPacket,counter</span>);</p>
+
+<p class=MsoPlainText>}</p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h2><a name="_Toc198719551">Generic Driver</a></h2>
+
+<p class=MsoNormal><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>There are some very
+specific changes to the Microchip Generic class driver code as provided that
+need to be highlighted.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<h3><span style='mso-spacerun:yes'>  </span><a name="_Toc198719552">Data
+buffering removed</a></h3>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>In
+the 1.x releases of the USB firmware framework the transferred and received
+data was buffered in the device class layer.<span style='mso-spacerun:yes'> 
+</span>This allowed users to send data to the computer and immediately start
+refilling the buffer without having to wait for the original transfer to
+complete.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>With
+release of the 2.x version USB framework, the buffering of the data transferred
+has been removed.<span style='mso-spacerun:yes'>  </span>This means that
+applications that can’t wait until the previous transfer is complete must
+double buffer the data in the application layer.<span
+style='mso-spacerun:yes'>  </span>The data is now transferred directly from the
+user buffer.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<h3><span style='mso-spacerun:yes'>  </span><a name="_Toc198719553">Buffer
+location - Sending data from user space</a></h3>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>As
+stated in the previous section “Data buffering removed”, the data transferred
+by the generic driver is no longer buffered in the class driver.<span
+style='mso-spacerun:yes'>  </span>The combination of sending data from the user
+data space and the limited USB dual port RAM on the PIC18F4550, PIC18F4450, and
+PIC18F4553 families, the user needs to be able to reuse as much of the dual
+port RAM as possible.<span style='mso-spacerun:yes'>  </span>Since the BDT
+usage changes based on the number of endpoints use and the ping-pong mode
+selected, the end address of the BDT may not be easily calculated.<span
+style='mso-spacerun:yes'>  </span>This modification is not required for the
+PIC18F87J50 or PIC24J256GB110 family devices.<br>
+<br>
+In order to allocate user data in the same section as the BDT, use the #<span
+class=SpellE>pragma</span> directive and define a section name that the user
+variables should be located at.<span style='mso-spacerun:yes'>  </span>For
+example:<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'>#<span class=SpellE>pragma</span>
+<span class=SpellE>udata</span> USB_VARS</p>
+
+<p class=MsoPlainText style='margin-left:.5in'>DATA_PACKET <span class=SpellE>INPacket</span>;</p>
+
+<p class=MsoPlainText style='margin-left:.5in'>DATA_PACKET <span class=SpellE>OUTPacket</span>;</p>
+
+<p class=MsoPlainText style='margin-left:.5in'>#<span class=SpellE>pragma</span>
+<span class=SpellE>udata</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>This
+locates these two variables in the USB_VARS section.<span
+style='mso-spacerun:yes'>  </span>This is only one half of the equation.<span
+style='mso-spacerun:yes'>  </span>Without a specific address the linker will
+ignore the #<span class=SpellE>pramga</span> definition and define the variable
+wherever it finds room.<span style='mso-spacerun:yes'>  </span>The second step
+is to define where the USB_VARS section is located.<span
+style='mso-spacerun:yes'>  </span>This modification is made in the linker file
+for specific device.<span style='mso-spacerun:yes'>  </span>At the end of the
+linker file add a line that defines what section of RAM the variables are
+located in.<span style='mso-spacerun:yes'>  </span>For example: <o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'>SECTION<span
+style='mso-spacerun:yes'>    </span>NAME=USB_VARS<span
+style='mso-spacerun:yes'>   </span>RAM=usb4</p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>The
+“usb4” section name in this case is the name defined in the linker file:<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'>ACCESSBANK NAME=<span
+class=SpellE><span class=GramE>accessram</span></span><span class=GramE><span
+style='mso-spacerun:yes'>  </span>START</span>=0x0<span
+style='mso-spacerun:yes'>            </span>END=0x5F</p>
+
+<p class=MsoPlainText style='margin-left:.5in'>DATABANK<span
+style='mso-spacerun:yes'>   </span>NAME=gpr0<span
+style='mso-spacerun:yes'>       </span>START=0x60<span
+style='mso-spacerun:yes'>           </span>END=0xFF</p>
+
+<p class=MsoPlainText style='margin-left:.5in'>DATABANK<span
+style='mso-spacerun:yes'>   </span>NAME=gpr1<span
+style='mso-spacerun:yes'>       </span>START=0x100<span
+style='mso-spacerun:yes'>  </span><span
+style='mso-spacerun:yes'>        </span>END=0x1FF</p>
+
+<p class=MsoPlainText style='margin-left:.5in'>DATABANK<span
+style='mso-spacerun:yes'>   </span>NAME=gpr2<span
+style='mso-spacerun:yes'>       </span>START=0x200<span
+style='mso-spacerun:yes'>          </span>END=0x2FF</p>
+
+<p class=MsoPlainText style='margin-left:.5in'>DATABANK<span
+style='mso-spacerun:yes'>   </span>NAME=gpr3<span
+style='mso-spacerun:yes'>       </span>START=0x300<span
+style='mso-spacerun:yes'>          </span>END=0x3FF</p>
+
+<p class=MsoPlainText style='margin-left:.5in'>DATABANK<span
+style='mso-spacerun:yes'>   </span>NAME=usb4<span
+style='mso-spacerun:yes'>       </span>START=0x400<span
+style='mso-spacerun:yes'>          </span>END=0x4FF<span
+style='mso-spacerun:yes'>          </span>PROTECTED</p>
+
+<p class=MsoPlainText style='margin-left:.5in'>DATABANK<span
+style='mso-spacerun:yes'>   </span>NAME=usb5<span
+style='mso-spacerun:yes'>       </span>START=0x500<span
+style='mso-spacerun:yes'>       </span><span
+style='mso-spacerun:yes'>   </span>END=0x5FF<span
+style='mso-spacerun:yes'>          </span>PROTECTED</p>
+
+<p class=MsoPlainText style='margin-left:.5in'>DATABANK<span
+style='mso-spacerun:yes'>   </span>NAME=usb6<span
+style='mso-spacerun:yes'>       </span>START=0x600<span
+style='mso-spacerun:yes'>          </span>END=0x6FF<span
+style='mso-spacerun:yes'>          </span>PROTECTED</p>
+
+<p class=MsoPlainText style='margin-left:.5in'>DATABANK<span
+style='mso-spacerun:yes'>   </span>NAME=usb7<span
+style='mso-spacerun:yes'>       </span>START=0x700<span
+style='mso-spacerun:yes'>          </span>END=0x7FF<span
+style='mso-spacerun:yes'>          </span>PROTECTED</p>
+
+<p class=MsoPlainText style='margin-left:.5in'>ACCESSBANK NAME=<span
+class=SpellE><span class=GramE>accesssfr</span></span><span class=GramE><span
+style='mso-spacerun:yes'>  </span>START</span>=0xF60<span
+style='mso-spacerun:yes'>          </span>END=0xFFF<span
+style='mso-spacerun:yes'>          </span>PROTECTED</p>
+
+<p class=MsoPlainText style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText style='margin-left:.5in'>SECTION<span
+style='mso-spacerun:yes'>    </span>NAME=CONFIG<span
+style='mso-spacerun:yes'>     </span>ROM=<span class=SpellE>config</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText style='margin-left:.5in'>STACK SIZE=0x100 RAM=gpr3</p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h2><a name="_Toc198719554">Configuration Descriptor</a></h2>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>The format of the
+configuration descriptor was changed from a structure to a byte array.<span
+style='mso-spacerun:yes'>  </span>This removes the requirement of having to
+modify a configuration descriptor structure definition to add information to
+the configuration descriptor.<span style='mso-spacerun:yes'>  </span>This,
+however, creates a situation where entries that were previously added to the
+structure now need to be <span class=GramE>add</span> as individual bytes.<span
+style='mso-spacerun:yes'>  </span>Please be aware that configuration descriptors
+created for the v1.x stack will need to be converted to this new format by
+splitting up the word or larger entries manually or using the assistance macros
+discussed later in this section.<span style='mso-spacerun:yes'>  </span>For
+example:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>Old entry:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span style='mso-tab-count:
+1'>            </span>0x55,<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:.5in'><span style='font-family:Arial'>0xAAFF,<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>0x11<span
+class=GramE>,…</span><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>New entry:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span style='mso-tab-count:
+1'>            </span>0x55,<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span style='mso-tab-count:
+1'>            </span>0xFF<span class=GramE>,0xAA</span>,<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span style='mso-tab-count:
+1'>            </span>0x11<span class=GramE>,…</span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>To help the conversion
+and to help make the code more readable, an optional macro named DESC_CONFIG_<span
+class=GramE>WORD(</span>) as been added that does this split
+automatically.<span style='mso-spacerun:yes'>  </span>DESC_CONFIG_<span
+class=GramE>BYTE(</span>) and DESC_CONFIG_DWORD() have been added for consistency.<span
+style='mso-spacerun:yes'>  </span>For example:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>New entry:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span style='mso-tab-count:
+1'>            </span>0x55,<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span style='mso-tab-count:
+1'>            </span>DESC_CONFIG_<span class=GramE>WORD(</span>0xAAFF),<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span style='mso-tab-count:
+1'>            </span>0x11<span class=GramE>,…</span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>-- Or --<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'>New entry:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span style='mso-tab-count:
+1'>            </span>DESC_CONFIG_<span class=GramE>BYTE(</span>0x55),<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span style='mso-tab-count:
+1'>            </span>DESC_CONFIG_<span class=GramE>WORD(</span>0xAAFF),<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span style='mso-tab-count:
+1'>            </span>DESC_CONFIG_<span class=GramE>BYTE(</span>0x11),…<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h2><a name="_Toc198719555">Trademarks:</a></h2>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:Arial;color:black'>The Microchip name and logo, the Microchip logo,
+MPLAB, and PIC are registered trademarks of Microchip Technology Incorporated
+in the <st1:place w:st="on"><st1:country-region w:st="on">U.S.A.</st1:country-region></st1:place>
+and other countries.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span class=GramE><i><span
+style='font-size:10.0pt;font-family:Arial;color:black'>PICDEM is a trademark of
+Microchip Technology Incorporated in the <st1:country-region w:st="on"><st1:place
+ w:st="on">U.S.A.</st1:place></st1:country-region> and other countries.</span></i></span><i><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span class=GramE><i><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Microsoft, Windows, and
+Windows Vista are either registered trademarks or trademarks of Microsoft
+Corporation in the <st1:country-region w:st="on"><st1:place w:st="on">United
+  States</st1:place></st1:country-region> and/or other countries.</span></i></span><i><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span class=GramE><i><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Borland, and C++ Builder
+are trademarks or registered trademarks of Borland Software Corporation in the <st1:country-region
+w:st="on"><st1:place w:st="on">United States</st1:place></st1:country-region>
+and other countries.</span></i></span><i><span style='font-size:10.0pt;
+font-family:Arial;color:black'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:Arial;color:black'>Linux is the registered trademark of <span
+class=SpellE>Linus</span> <span class=SpellE>Torvalds</span> in the <st1:country-region
+w:st="on"><st1:place w:st="on">U.S.</st1:place></st1:country-region> and other
+countries.</span></i><span style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

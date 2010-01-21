@@ -1,0 +1,2592 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="Release%20Notes%20v2.3_files/filelist.xml">
+<title>Release Notes for MCHPFSUSB v2.3</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="Street"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="country-region"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceType"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceName"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="address"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Microchip</o:Author>
+  <o:LastAuthor>C12109</o:LastAuthor>
+  <o:Revision>318</o:Revision>
+  <o:TotalTime>962</o:TotalTime>
+  <o:Created>2008-01-07T22:28:00Z</o:Created>
+  <o:LastSaved>2008-09-25T16:11:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>7283</o:Words>
+  <o:Characters>41516</o:Characters>
+  <o:Company>Microchip Technology Inc</o:Company>
+  <o:Lines>345</o:Lines>
+  <o:Paragraphs>97</o:Paragraphs>
+  <o:CharactersWithSpaces>48702</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:_DocHome dt:dt="float">-168058582</o:_DocHome>
+ </o:CustomDocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>90</w:Zoom>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 5 6 2 2 2 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 2048 0 0 159 0;}
+@font-face
+	{font-family:"MS Shell Dlg";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627421663 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.3in;
+	text-indent:-.3in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.4in;
+	text-indent:-.4in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-weight:bold;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:10.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:.25in;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoListBullet2, li.MsoListBullet2, div.MsoListBullet2
+	{margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.heading0, li.heading0, div.heading0
+	{mso-style-name:heading0;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.listbullet2nospace, li.listbullet2nospace, div.listbullet2nospace
+	{mso-style-name:listbullet2nospace;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+span.computerchar
+	{mso-style-name:computerchar;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:418646228;
+	mso-list-template-ids:67698719;}
+@list l0:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-text:"%1\.%2\.";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;}
+@list l0:level3
+	{mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:.85in;
+	text-indent:-.35in;}
+@list l0:level4
+	{mso-level-text:"%1\.%2\.%3\.%4\.";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.2in;
+	text-indent:-.45in;}
+@list l0:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.";
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.55in;
+	text-indent:-.55in;}
+@list l0:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.";
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:1.9in;
+	text-indent:-.65in;}
+@list l0:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.";
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.75in;}
+@list l0:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.";
+	mso-level-tab-stop:2.75in;
+	mso-level-number-position:left;
+	margin-left:2.6in;
+	text-indent:-.85in;}
+@list l0:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9\.";
+	mso-level-tab-stop:3.25in;
+	mso-level-number-position:left;
+	margin-left:3.0in;
+	text-indent:-1.0in;}
+@list l1
+	{mso-list-id:857156482;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-932423844 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:881404470;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1404574252 67698703 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:1336691014;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1540958046 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:1765686274;
+	mso-list-template-ids:-672001838;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0D8;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l4:level3
+	{mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.1in;
+	text-indent:-.35in;}
+@list l4:level4
+	{mso-level-text:"%1\.%2\.%3\.%4\.";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.45in;
+	text-indent:-.45in;}
+@list l4:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.";
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:1.8in;
+	text-indent:-.55in;}
+@list l4:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.";
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.15in;
+	text-indent:-.65in;}
+@list l4:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.";
+	mso-level-tab-stop:2.75in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.75in;}
+@list l4:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.";
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	margin-left:2.85in;
+	text-indent:-.85in;}
+@list l4:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9\.";
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-1.0in;}
+@list l5
+	{mso-list-id:1771701549;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1998174140 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6
+	{mso-list-id:2083942118;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2105852450 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l6:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l6:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l6:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin-top:5.0pt;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:5.0pt;
+	mso-para-margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal><a name="_Toc175736789"><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>Release Notes for Microchip USB Firmware Framework
+v2.3 – Microchip Full-Speed USB Solutions</span></b></a><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal>Sept 20, 2008</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><a name="_Toc175736790"><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>Table of Contents</span></b></a><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 431.5pt'><!--[if supportFields]><span
+style='mso-element:field-begin'></span><span style='mso-spacerun:yes'> </span>TOC
+\o &quot;1-1&quot; \n \p &quot; &quot; \h \z \u <span style='mso-element:field-separator'></span><![endif]--><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc208371839">1.<span
+style='font-size:12.0pt;font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1'>     </span></span>What's
+New/Updated in Release v2.3</a></span></span><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 431.5pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc208371840">2.<span
+style='font-size:12.0pt;font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1'>     </span></span>Important
+Notes</a></span></span><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 431.5pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc208371841">3.<span
+style='font-size:12.0pt;font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1'>     </span></span>What's
+in the Package</a></span></span><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 431.5pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc208371842">4.<span
+style='font-size:12.0pt;font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1'>     </span></span>Known
+Limitations</a></span></span><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 431.5pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc208371843">5.<span
+style='font-size:12.0pt;font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1'>     </span></span>Coming
+Soon – What’s next?</a></span></span><span style='font-size:12.0pt;font-family:
+"Times New Roman";mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 431.5pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc208371844">6.<span
+style='font-size:12.0pt;font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1'>     </span></span>USB
+Compliance Test ID (TID) Information</a></span></span><span style='font-size:
+12.0pt;font-family:"Times New Roman";mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 431.5pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc208371845">7.<span
+style='font-size:12.0pt;font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1'>     </span></span>Alternative
+Software Solutions</a></span></span><span style='font-size:12.0pt;font-family:
+"Times New Roman";mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 431.5pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc208371846">8.<span
+style='font-size:12.0pt;font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1'>     </span></span>Online
+Reference Documents</a></span></span><span style='font-size:12.0pt;font-family:
+"Times New Roman";mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 431.5pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc208371847">9.<span
+style='font-size:12.0pt;font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1'>     </span></span>Customer
+Support</a></span></span><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoNormal><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]--><o:p>&nbsp;</o:p></p>
+
+<h1 style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in'><a name="_Toc208371839"></a><a name="_Toc201394623"></a><a
+name="_Toc187228024"></a><a name="_Toc175736791"><span style='mso-bookmark:
+_Toc187228024'><span style='mso-bookmark:_Toc201394623'><span style='mso-bookmark:
+_Toc208371839'><![if !supportLists]><span style='mso-fareast-font-family:Arial'><span
+style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>What's New/Updated in Release v</span></span></span></a><span
+style='mso-bookmark:_Toc201394623'><span style='mso-bookmark:_Toc208371839'>2.</span></span><span
+style='mso-bookmark:_Toc208371839'>3</span></h1>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo2;tab-stops:list .5in'>OTG/Dual
+     Role</li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l6 level2 lfo2;tab-stops:list 1.0in'>MCHPUSB
+      OTG example – complete OTG example.<span style='mso-spacerun:yes'> 
+      </span>Shows host negotiation protocol (HNP), session request protocol
+      (SRP), ID role detection, and all of the other OTG functionality.</li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo2;tab-stops:list .5in'>Embedded
+     Host </li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l6 level2 lfo2;tab-stops:list 1.0in'>Printer
+      Class host – Support for PostScript® and PCL5 full sheet printers.<span
+      style='mso-spacerun:yes'>  </span>Also supports ESC/POS point of sale
+      printers.</li>
+  <li class=MsoNormal style='mso-list:l6 level2 lfo2;tab-stops:list 1.0in'>CDC Class
+      host – Supports abstract control model (ACM) devices. </li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo2;tab-stops:list .5in'>Device
+     </li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l6 level2 lfo2;tab-stops:list 1.0in'>HID
+      bootloader – added support for PIC32MX460F512L family devices and
+      PIC18F14K50 family devices.</li>
+  <li class=MsoNormal style='mso-list:l6 level2 lfo2;tab-stops:list 1.0in'>MSD
+      internal flash demo – uses the internal flash as the storage media for
+      the drive</li>
+  <li class=MsoNormal style='mso-list:l6 level2 lfo2;tab-stops:list 1.0in'>MSD +
+      HID composite example has been moved to use the internal flash demo in
+      place of the SD-Card example</li>
+  <li class=MsoNormal style='mso-list:l6 level2 lfo2;tab-stops:list 1.0in'>PIC32MX460F512L
+      family support in existing device demos</li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo2;tab-stops:list .5in'>PC</li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l6 level2 lfo2;tab-stops:list 1.0in'>Updated
+      HID, MCHPUSB, and WinUSB examples using Microsoft Plug-and-Play (PnP) to
+      detect device attachment as well as running using threading to improve
+      application responsiveness.</li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo2;tab-stops:list .5in'>Documentation</li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l6 level2 lfo2;tab-stops:list 1.0in'>Device
+      side API documentation located in the “&lt;Install
+      Directory&gt;\Microchip\Help” folder.</li>
+ </ul>
+</ul>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>In order to make using each of the
+provided demos easier to use, a workspace file is provided for each of the demo
+boards for each of the demos where supported.<span style='mso-spacerun:yes'> 
+</span>At the end of the name of each of the work space files is the name of
+the demo board it supports; “Low Pin Count USB Development Kit”, “PICDEM
+FSUSB”, “PIC18F87J50 PIM”, “C30” , “C32”, etc. (ex: PIC24FJ256GB110 PIM).<span
+style='mso-spacerun:yes'>  </span>None of the files inside of the project need
+to be modified in order to get the project to compile.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h1 style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in'><a name="_Toc175736792"></a><a name="_Toc187228025"></a><a
+name="_Toc208371840"><span style='mso-bookmark:_Toc187228025'><span
+style='mso-bookmark:_Toc175736792'><![if !supportLists]><span style='mso-fareast-font-family:
+Arial'><span style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Important Notes</span></span></a></h1>
+
+<h2 style='margin-left:.65in'><a name="_Toc175736793">Migration Issues</a></h2>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='mso-bookmark:_Toc175736793'>Please
+note that the restructuring of the entire USB framework includes changes to the
+API of both the stack and several of the device drivers.<span
+style='mso-spacerun:yes'>  </span>It is important to review the migration notes
+as there have been major changes in functionality and behavior of the firmware.<span
+style='mso-spacerun:yes'>  </span>For more details about what has changed
+please refer to the Migration Notes.</span></p>
+
+<h2 style='margin-left:.65in'><span style='mso-bookmark:_Toc175736793'>Tool
+revisions</span></h2>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='mso-bookmark:_Toc175736793'>This
+release was tested with the following tools:</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='mso-bookmark:_Toc175736793'>C18
+– v3.20</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='mso-bookmark:_Toc175736793'>C30
+- v3.10</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='mso-bookmark:_Toc175736793'>C32
+– v1.02</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='mso-bookmark:_Toc175736793'><b
+style='mso-bidi-font-weight:normal'><span style='background:lime;mso-highlight:
+lime'>MPLAB v8.15</span> </b>– <b style='mso-bidi-font-weight:normal'><u><span
+style='color:red'>Some of the changes in this release require MPLAB v8.10 or
+later. <o:p></o:p></span></u></b></span></p>
+
+<h2 style='margin-left:.65in'><span style='mso-bookmark:_Toc175736793'>Library
+revisions</span></h2>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='mso-bookmark:_Toc175736793'>This
+release includes the following Microchip libraries:</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='mso-bookmark:_Toc175736793'>Graphics
+v1.52</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='mso-bookmark:_Toc175736793'>Microchip
+Memory Disk (MDD) File System v1.2</span></p>
+
+<h2 style='margin-left:.65in'><span style='mso-bookmark:_Toc175736793'>Notes
+about .INF files</span></h2>
+
+<p class=MsoNormal style='margin-left:.25in'>Upon initially plugging in a USB
+device, in some cases Windows will prompt the user for a driver.<span
+style='mso-spacerun:yes'>  </span>Rather than having users manually copy .sys
+files (driver binary files) into important system directories (such as within
+the “\Windows\system32\” directory structure) and manually add registry
+entries, Windows automates the driver installation process through the use of
+.INF files.<span style='mso-spacerun:yes'>  </span>INF files are plain text
+(can be edited with notepad) installation instruction script files.</p>
+
+<p class=MsoNormal style='margin-left:.25in'>Some types of USB devices will not
+require .INF files or user provided drivers (for example, a HID class
+mouse).<span style='mso-spacerun:yes'>  </span>For these types of devices, the
+operating system makes use of drivers already built into/distributed with the
+operating system, so no user provided driver or .INF file is necessary.</p>
+
+<p class=MsoNormal style='margin-left:.25in'>For other types of devices,
+Windows will prompt the user for a driver.<span style='mso-spacerun:yes'> 
+</span>In these cases, point Windows to the .INF file relevant for the USB
+device.<span style='mso-spacerun:yes'>  </span>All of the example projects
+included in the MCHPFSUSB framework which need an INF file are provided with an
+example INF file.<span style='mso-spacerun:yes'>  </span>The INF file will need
+slight modification (most importantly to change the VID and PID) before
+commercial distribution.<span style='mso-spacerun:yes'>  </span></p>
+
+<p class=MsoNormal style='margin-left:.25in'>The INF file for the custom demo
+can be found in &lt;Install Directory&gt;\USB Tools\MCHPUSB Custom
+Driver\MCHPUSB Driver\Release.</p>
+
+<p class=MsoNormal style='margin-left:.25in'>The INF file for the CDC demos can
+be found in &lt;Install Directory&gt;\USB Tools\USB CDC Serial
+Demo\inf\win2k_winxp.</p>
+
+<h2 style='margin-left:.65in'><a name="_Toc175736794">Notes about Vendor ID
+(VID) and Product ID (PID)</a></h2>
+
+<p class=MsoNormal style='margin-left:.25in'>Every USB product line must have a
+unique combination of VID and PID.<span style='mso-spacerun:yes'>  </span>All
+firmware examples use Microchip's VID (0x04d8) and a unique PID. Prior to
+manufacturing and marketing a new USB product, the VID and PID need to be
+changed.<span style='mso-spacerun:yes'>  </span>New VID and PID numbers can be
+obtained by purchasing a VID from the USB Implementers Forum:</p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://www.usb.org/developers/vendor">http://www.usb.org/developers/vendor</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>Alternatively, Microchip has a
+free VID sublicensing program.<span style='mso-spacerun:yes'>  </span>An
+application form for obtaining a PID (for use with Microchip’s VID: 0x04d8)
+from Microchip can be obtained by clicking <u><a
+href="http://www.microchip.com/stellent/groups/sitecomm_sg/documents/market_communication/en025058.pdf">here</a></u>
+for the direct link.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>Once a new VID/PID combination is
+obtained, both the firmware and the .INF file (when applicable) will need to be
+updated.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>To modify the VID/PID in one of
+the example USB firmware projects, open the usb_descriptors.c file (found in
+each of the demo folders).<span style='mso-spacerun:yes'>  </span>They should
+appear in the table used for the USB Device Descriptor.<span
+style='mso-spacerun:yes'>  </span>Change both values as needed.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>To modify the VID/PID in the .INF
+file, open the relevant INF file and search for the “[DeviceList]” sections.
+There are two sections, one for 32-bit and one for 64-bit, both sections should
+be identical.<span style='mso-spacerun:yes'>  </span>In these sections, some
+text will appear with the form “USB\VID_xxxx&amp;PID_yyyy”.<span
+style='mso-spacerun:yes'>  </span>Update the “xxxx” and “yyyy” sections with
+the new hexadecimal format VID/PID values.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<h2 style='margin-left:.65in'><a name="_Toc175736795">Notes about MPLAB® C18 C
+Compiler</a> and MPLAB® C30 C Compiler</h2>
+
+<p class=MsoNormal style='margin-left:.25in'>The example firmware projects
+included in the distribution are based around the MPLAB C18 and C30
+compilers.<span style='mso-spacerun:yes'>  </span>Either the commercial
+version, or the free student version can be used to build the example
+projects.<span style='mso-spacerun:yes'>  </span>The compilers may be obtained
+from <a href="http://www.microchip.com/c18">http://www.microchip.com/c18</a>
+and <a href="http://www.microchip.com/c30">http://www.microchip.com/c30</a>.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h1 style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in'><a name="_Toc175736796"></a><a name="_Toc187228026"></a><a
+name="_Toc208371841"><span style='mso-bookmark:_Toc187228026'><span
+style='mso-bookmark:_Toc175736796'><![if !supportLists]><span style='mso-fareast-font-family:
+Arial'><span style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>What's in the Package</span></span></a></h1>
+
+<h2 style='margin-left:.55in;text-indent:-.55in;mso-list:l0 level2 lfo1;
+tab-stops:27.0pt list .55in'><a name="_Toc175736797"><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:Arial'><span
+style='mso-list:Ignore'>3.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Overview</a><span style='mso-bookmark:_Toc175736797'></span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></h2>
+
+<p class=MsoNormal>Stack v2.3 adds some new demo files and folders to the
+existing directory structure.<span style='mso-spacerun:yes'>  </span>Details of
+their contents and purpose are described below.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>.\&lt;Install Directory&gt;</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\Microchip</p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>\Include</p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>\Help</p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>\USB</p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>\Documentation</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Device_Bootloaders">USB Device - Bootloaders</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Device_CDC_basic_demo">USB Device – CDC – Basic Demo</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>\CDC
+- Basic Demo – Firmware</p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>\inf</p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>\PC
+Software Example</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Device_CDC_serial_emulator">USB Device – CDC – Serial Emulator</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>\CDC
+- Serial Emulator</p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>\inf</p>
+
+<p class=MsoNormal style='text-indent:.5in'>\<a href="#Device_HID_MSD_Composite">USB
+Device - Composite - HID + MSD</a></p>
+
+<p class=MsoNormal style='text-indent:.5in'>\<a href="#Device_HID_Keyboard">USB
+Device - HID - Keyboard</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Device_HID_Mouse_In_Circle">USB Device – HID - Mouse</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Device_Simple_Custom_Demo">USB Device – HID – Simple Custom Demo</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#device_msd_internal_flash">USB Device – Mass Storage – Internal Flash</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Device_MSD_SD_data_logger">USB Device – Mass Storage – SD Card data
+logger</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Device_MSD_SD_Card_Reader">USB Device – Mass Storage – SD Card reader</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Device_Custom_Class">USB Device – MCHPUSB - Generic Driver Demo</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>\PC
+software</p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:.5in'>\Borland_C</p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:.5in'>\<a
+href="#PC_Tools_PDFSUSB">Pdfsusb</a></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:.5in'>\Visual C++ 2005
+Express</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Device_WinUSB">USB Device - WinUSB - Generic Driver Demo</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>\Driver
+and INF</p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>\WinUSB
+Simple Demo – Firmware</p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>\WinUSB
+Simple Demo - PC Application - MS VC++ 2005</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#host_cdc_seral_demo">USB Host – CDC – Serial Demo</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Host_HID_keyboard">USB Host - HID - Keyboard</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Host_Data_Logger">USB Host – Mass Storage - Data Logger</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Host_MCHPUSB">USB Host - MCHPUSB - Generic Driver Demo</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#host_printer_print_screen">USB Host – Printer – Print Screen Demo</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#host_printer_simple_full">USB Host – Printer – Simple Full Sheet Demo</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#host_simple_pos">USB Host – Printer – Simple POS Demo</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#otg_mchpusb">USB OTG – MCHPUSB – Generic Driver Demo</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#WM_DEVICECHANGE_example">USB PC – WM_DEVICECHANGE Demo</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#Percompiled_Demos">USB Precompiled Demos</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>\<a
+href="#_USB_Tools/Code_for">USB Tools</a></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span></p>
+
+<h2 style='margin-left:27.0pt;text-indent:-27.0pt;mso-list:l0 level2 lfo1;
+tab-stops:list 27.0pt .55in'><a name="_Toc175736798"></a><a
+name="_MPLAB_IDE_Firmware_Projects_and_HEX"></a><![if !supportLists]><span
+style='mso-bookmark:_Toc175736798'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>3.2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></span><![endif]><span
+style='mso-bookmark:_Toc175736798'>MPLAB IDE Firmware Projects </span>and
+hardware<span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></h2>
+
+<p class=MsoNormal style='margin-left:27.0pt'>Several USB example firmware
+projects and hex files are included in the installation.<span
+style='mso-spacerun:yes'>  </span>Documentation explaining how to program and
+run each of the provided demos is available in each of the demo folders as well
+as the &lt;Install Directory&gt;\Microchip\USB\Documentation folder.</p>
+
+<p class=MsoNormal style='margin-left:27.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:27.0pt'><a
+name="_Factory_Original_HEX_Files"></a>Microchip provides several full-speed
+USB demo board hardware platforms:</p>
+
+<p class=MsoNormal style='margin-left:27.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:27.0pt'>The PICDEM FS USB Demo Board (<a
+href="http://www.microchipdirect.com/">www.microchipDIRECT.com</a> part number
+DM163025) enables evaluation of USB on the PIC18F4550 family devices.<span
+style='mso-spacerun:yes'>  </span></p>
+
+<p class=MsoNormal style='margin-left:27.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:27.0pt'>The PIC18F87J50 FS USB Plug-In
+Module (PIM) demo board (<a href="http://www.microchipdirect.com/">www.microchipDIRECT.com</a>
+part number MA180021) enables evaluation of USB on the PIC18F87J50 family
+devices.<span style='mso-spacerun:yes'>  </span>This board can be operated by
+itself or in conjunction with the High Pin Count (HPC) Explorer board (<a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM183022">www.microchipdirect.com</a>
+part number DM183022).</p>
+
+<p class=MsoNormal style='margin-left:27.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:27.0pt'>The PIC24FJ256GB110 USB Plug-In
+Module (<a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA240014">www.microchipdirect.com</a>
+part number MA240014) enables evaluation of USB on the PIC24FJ256GB110 family
+devices.<span style='mso-spacerun:yes'>  </span>In addition to the PIM the
+Explorer 16 (<a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM240001">www.microchipdirect.com</a>
+part number DM240001) and USB Pictail Plus board (<a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=AC164131">www.microchipdirect.com</a>
+part number AC164131) are required for evaluation.</p>
+
+<p class=MsoNormal style='margin-left:27.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:27.0pt'>In addition to the USB specific hardware,
+the SD Card Pictail Plus board is used for all of the mass storage demos (<a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=AC164122">www.microchipdirect.com</a>
+part number AC164122).</p>
+
+<h3 style='margin-left:.5in'><a name="Device_Bootloaders">USB Device -
+Bootloaders</a><span style='mso-bookmark:Device_Bootloaders'><span
+style='font-size:11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Device_Bootloaders'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Device - Bootloaders</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This folder contains both the
+MCHPUSB bootloader for the PIC18F4550 family devices and the HID bootloader for
+the PIC18F87J50 family devices, PIC18F4550 family devices, PIC18F4450 family
+devices, PIC18F4553 family devices, and PIC24FJ256GB110 family devices.<span
+style='mso-spacerun:yes'>  </span>Both the firmware projects and the PC side
+applications are available in this folder.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Device_CDC_basic_demo">Device – CDC –
+Basic Demo</a><span style='mso-bookmark:Device_CDC_basic_demo'><span
+style='font-size:11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Device_CDC_basic_demo'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Device – CDC – Basic Demo</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for device enumeration, and it
+also provides an implementation example of a communication device class (CDC)
+device.<span style='mso-spacerun:yes'>  </span>The firmware emulates a COM
+port.<span style='mso-spacerun:yes'>  </span>In this demo the CDC firmware
+either echos a keypress back to the user with slight modification or prints a
+message to the screen when the pushbutton is pressed.<span
+style='mso-spacerun:yes'>  </span>For more information about how to use the
+demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install Directory&gt;\Microchip\USB\Documentation\Getting
+Started” directory.</a></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Along with the firmware, some PC
+resources are also provided.<span style='mso-spacerun:yes'>  </span>Windows
+operating systems will ask for a .inf file associated with any CDC device that
+is plugged in.<span style='mso-spacerun:yes'>  </span>This file can be located
+in the “&lt;Install Directory&gt;\USB Device – CDC – Basic Demo\inf”
+folder.<span style='mso-spacerun:yes'>  </span>There are also a couple of demo
+applications showing how to access the virtual COM port objects using VC++,
+VC#, and VB.net.<span style='mso-spacerun:yes'>  </span>These examples can be
+found in the “&lt;Install Directory&gt;\USB Device – CDC – Basic Demo\PC
+Software Example” folder.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Neither the USB hardware on the
+PIC® microcontroller, nor the firmware used is platform specific.<span
+style='mso-spacerun:yes'>  </span>Several different types of operating systems,
+including modern Macintosh and Linux® operating systems have built in CDC drivers.<span
+style='mso-spacerun:yes'>  </span>The CDC basic demo may be used on these other
+platforms in addition to Windows.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Device_CDC_serial_emulator">Device – CDC
+– Serial Emulator</a><span style='mso-bookmark:Device_CDC_serial_emulator'><span
+style='font-size:11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Device_CDC_serial_emulator'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Device – CDC – Basic Demo</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for device enumeration, and it
+also provides an implementation example of a communication device class (CDC)
+device.<span style='mso-spacerun:yes'>  </span>The firmware emulates a COM
+port.<span style='mso-spacerun:yes'>  </span>In this demo the CDC firmware acts
+like a USB to RS232 converter.<span style='mso-spacerun:yes'>  </span>Data sent
+or received on the USB port will be passed to/from the RS232 port.<span
+style='mso-spacerun:yes'>  </span>For more information about how to use the
+demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Along with the firmware, some PC
+resources are also provided.<span style='mso-spacerun:yes'>  </span>Windows
+operating systems will ask for a .inf file associated with any CDC device that
+is plugged in.<span style='mso-spacerun:yes'>  </span>This file can be located
+in the “&lt;Install Directory&gt;\USB Device – CDC – Serial Emulator\inf”
+folder.<span style='mso-spacerun:yes'>  </span>There are also a couple of demo
+applications showing how to access the virtual COM port objects using VC++,
+VC#, and VB.net.<span style='mso-spacerun:yes'>  </span>These examples can be
+found in the “&lt;Install Directory&gt;\USB Device – CDC – <b style='mso-bidi-font-weight:
+normal'><u>Basic Demo</u></b>\PC Software Example” folder.<span
+style='mso-spacerun:yes'>  </span>Please note that the PC applications are in
+the “USB Device – CDC – Basic Demo” folder and not the “USB Device – CDC –
+Serial Emulator” folder.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Neither the USB hardware on the
+PIC® microcontroller, nor the firmware used is platform specific.<span
+style='mso-spacerun:yes'>  </span>Several different types of operating systems,
+including modern Macintosh and Linux® operating systems have built in CDC
+drivers.<span style='mso-spacerun:yes'>  </span>The CDC basic demo may be used
+on these other platforms in addition to Windows.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Device_HID_MSD_Composite">Device –
+Composite – HID + MSD</a><span style='mso-bookmark:Device_HID_MSD_Composite'><span
+style='font-size:11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Device_HID_MSD_Composite'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Device – Composite – HID + MSD</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for device enumeration, and it
+also provides an implementation example of a mass storage (MSD) device and a
+human interface device (HID).<span style='mso-spacerun:yes'>  </span>This demo
+is a composite device so it appears to the computer as two separate devices
+when attached to the computer.<span style='mso-spacerun:yes'>  </span>This demo
+combines the “USB Device – MSD – SD card reader” and “USB Device – HID – Simple
+custom demo” demos into a single device.<span style='mso-spacerun:yes'> 
+</span>More information is provided in each of the corresponding demos (“<a
+href="#Device_MSD_SD_Card_Reader">USB Device – MSD – SD card reader</a>” and “<a
+href="#Device_Simple_Custom_Demo">USB Device – HID – Simple custom demo</a>”)
+sections.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Neither the USB hardware on the
+PIC® microcontroller, nor the firmware used is platform specific.<span
+style='mso-spacerun:yes'>  </span>Several different types of operating systems,
+including modern Macintosh and Linux® operating systems have built in HID and
+MSD drivers.<span style='mso-spacerun:yes'>  </span>The CDC basic demo may be
+used on these other platforms in addition to Windows.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Device_HID_Mouse_In_Circle"></a><a
+name="_Toc175736803"><span style='mso-bookmark:Device_HID_Mouse_In_Circle'>Device
+- Human Interface Device Class (HID): Mouse in a Circle Demo Firmware</span></a><span
+style='mso-bookmark:_Toc175736803'></span><span style='mso-bookmark:Device_HID_Mouse_In_Circle'><span
+style='font-size:11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Device_HID_Mouse_In_Circle'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Device – HID - Mouse</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for device enumeration, and it
+also provides an implementation example of a HID class device.<span
+style='mso-spacerun:yes'>  </span>The firmware emulates a basic USB mouse
+device, although it is intended to be readily modified for developing other
+types of non-mouse HID class USB devices.<span style='mso-spacerun:yes'> 
+</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>When using this firmware, Windows
+should not prompt the user for any kind of driver or .INF files.<span
+style='mso-spacerun:yes'>  </span>The HID driver is provided with the operating
+system, so no additional files are needed.<span style='mso-spacerun:yes'> 
+</span>Several different types of operating systems, including modern Macintosh
+and Linux® operating systems have built in HID drivers.<span
+style='mso-spacerun:yes'>  </span>Neither the USB hardware on the PIC®
+microcontroller, nor the firmware used is platform specific.<span
+style='mso-spacerun:yes'>  </span>The mouse in a circle demo may be used on
+these other platforms in addition to Windows.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Note: When using this firmware,
+the mouse cursor will continue to move in circles until the device is removed
+from the computer or until the designated push button is pressed on the
+board.<span style='mso-spacerun:yes'>  </span>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Device_HID_Keyboard">Device - Human
+Interface Device Class (HID): Keyboard Firmware</a><span style='mso-bookmark:
+Device_HID_Keyboard'><span style='font-size:11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Device_HID_Keyboard'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Device – HID - Keyboard</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for device enumeration, and it
+also provides an implementation example of a HID class device.<span
+style='mso-spacerun:yes'>  </span>The firmware emulates a basic USB keyboard
+device.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>When using this firmware, Windows
+should not prompt the user for any kind of driver or .INF files.<span
+style='mso-spacerun:yes'>  </span>The HID driver is provided with the operating
+system, so no additional files are needed.<span style='mso-spacerun:yes'> 
+</span>Several different types of operating systems, including modern Macintosh
+and Linux® operating systems have built in HID drivers.<span
+style='mso-spacerun:yes'>  </span>Neither the USB hardware on the PIC®
+microcontroller, nor the firmware used is platform specific.<span
+style='mso-spacerun:yes'>  </span>The mouse in a circle demo may be used on
+these other platforms in addition to Windows.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Device_Simple_Custom_Demo">Device – HID –
+Simple Custom Demo</a><span style='mso-bookmark:Device_Simple_Custom_Demo'><span
+style='font-size:11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Device_Simple_Custom_Demo'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Device – HID Simple Custom Demo</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>The HID class driver is found on
+nearly every operating system without requiring drivers for installation.<span
+style='mso-spacerun:yes'>  </span>This lends itself for creating simple USB
+devices that do not require drivers when plugged into the computer.<span
+style='mso-spacerun:yes'>  </span>This folder contains a simple example of how
+to create a simple custom HID device to talk over the USB.<span
+style='mso-spacerun:yes'>  </span>This folder also contains a PC example of how
+to access the HID drivers from a PC application.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="device_msd_internal_flash">USB Device –
+Mass Storage – Internal Flash</a></h3>
+
+<span style='mso-bookmark:device_msd_internal_flash'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Device - Mass Storage – Internal
+Flash</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for device enumeration, and it
+also provides an implementation example of a MSD class device.<span
+style='mso-spacerun:yes'>  </span>The firmware turns the hardware platform into
+a flash drive using the internal flash as the storage media.<span
+style='mso-spacerun:yes'>  </span>When the device is attached to the computer a
+new drive appears.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>When using this firmware, Windows
+should not prompt the user for any kind of driver or .INF files.<span
+style='mso-spacerun:yes'>  </span>The MSD driver is provided with the operating
+system, so no additional files are needed.<span style='mso-spacerun:yes'> 
+</span>Several different types of operating systems, including modern Macintosh
+and Linux® operating systems have built in MSD drivers.<span
+style='mso-spacerun:yes'>  </span>Neither the USB hardware on the PIC®
+microcontroller, nor the firmware used is platform specific.<span
+style='mso-spacerun:yes'>  </span>This demo may be used on these other
+platforms in addition to Windows.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Device_MSD_SD_Card_Reader"></a><a
+name="_Custom_Class:_Boot,_USB_Bootloader_"></a><a name="_Custom_Class:_Boot,"></a><a
+name="_Custom_Class:_“Demo”,_for_use_with_"></a><a name="_Custom_Class:_“Demo”,"></a><a
+name="_Custom_Class:_Demo"></a><a name="_Human_Interface_Device_Class_(HID):"></a><span
+style='mso-bookmark:Device_MSD_SD_Card_Reader'>Device – Mass Storage Device
+(MSD): SD card reader</span><span style='mso-bookmark:Device_MSD_SD_Card_Reader'><span
+style='font-size:11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Device_MSD_SD_Card_Reader'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Device - Mass Storage – SD Card
+reader</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for device enumeration, and it
+also provides an implementation example of a MSD class device.<span
+style='mso-spacerun:yes'>  </span>The firmware turns the hardware platform into
+a basic SD card reader.<span style='mso-spacerun:yes'>  </span>When the device
+is attached to the computer a new drive appears.<span
+style='mso-spacerun:yes'>  </span>If an SD card is inserted into the SD card
+PICTail Plus board, then the contents of the card are sent to the computer.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>When using this firmware, Windows
+should not prompt the user for any kind of driver or .INF files.<span
+style='mso-spacerun:yes'>  </span>The MSD driver is provided with the operating
+system, so no additional files are needed.<span style='mso-spacerun:yes'> 
+</span>Several different types of operating systems, including modern Macintosh
+and Linux® operating systems have built in MSD drivers.<span
+style='mso-spacerun:yes'>  </span>Neither the USB hardware on the PIC®
+microcontroller, nor the firmware used is platform specific.<span
+style='mso-spacerun:yes'>  </span>The SD card reader demo may be used on these
+other platforms in addition to Windows.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Device_MSD_SD_data_logger">Device – Mass
+Storage Device (MSD): SD card data logger</a><span style='mso-bookmark:Device_MSD_SD_data_logger'><span
+style='font-size:11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Device_MSD_SD_data_logger'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Device - Mass Storage – SD Card
+data logger</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for device enumeration, and it
+also provides an implementation example of a MSD class device.<span
+style='mso-spacerun:yes'>  </span>The firmware turns the hardware platform into
+a basic SD card data logger.<span style='mso-spacerun:yes'>  </span>When the
+device is attached to the computer a new drive appears.<span
+style='mso-spacerun:yes'>  </span>If an SD card is inserted into the SD card
+PICTail Plus board, then the contents of the card are sent to the
+computer.<span style='mso-spacerun:yes'>  </span>The firmware also allows users
+to log the potentiometer data into a comma separated file (CSV) file that can
+be opened once the device is attached to the computer.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>When using this firmware, Windows
+should not prompt the user for any kind of driver or .INF files.<span
+style='mso-spacerun:yes'>  </span>The MSD driver is provided with the operating
+system, so no additional files are needed.<span style='mso-spacerun:yes'> 
+</span>Several different types of operating systems, including modern Macintosh
+and Linux® operating systems have built in MSD drivers.<span
+style='mso-spacerun:yes'>  </span>Neither the USB hardware on the PIC®
+microcontroller, nor the firmware used is platform specific.<span
+style='mso-spacerun:yes'>  </span>The SD card reader demo may be used on these
+other platforms in addition to Windows.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install Directory&gt;\Microchip\USB\Documentation\Getting
+Started” directory.</a></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Device_Custom_Class"></a><a
+name="_Toc175736802"><span style='mso-bookmark:Device_Custom_Class'>Device –
+MCHPUSB - Generic Driver Demo (for use with PDFSUSB.exe</span></a><span
+style='mso-bookmark:Device_Custom_Class'> or other PC example software)</span><span
+style='mso-bookmark:Device_Custom_Class'><span style='font-size:11.0pt;
+mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Device_Custom_Class'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Device – MCHPUSB - Generic
+Driver Demo</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for enumeration, and it also
+provides an implementation example of a custom or ‘vendor’ class device using
+Microchip’s USB general purpose driver.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project serves as the basis
+for the firmware intended to be used with the “PICDEM FS USB Demo Tool”
+(launched with PDFSUSB.exe) or one of the other example PC example programs
+located in the “PC Software” folder of this project.<span
+style='mso-spacerun:yes'>  </span>The code provided in the project provides the
+firmware needed for the various features (such as temperature, potentiometer
+position) used by PDFSUSB.exe.<span style='mso-spacerun:yes'>  </span>A VC++
+example shows how to read the potentiometer data.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>When using this firmware, Windows
+should prompt the user for a driver when the USB cable is first connected.<span
+style='mso-spacerun:yes'>  </span>Upon receiving this prompt, point Windows to
+the .INF file located in the “&lt;Install
+Directory&gt;\Microchip\USB\Utilities\MCHPUSB Custom Driver\MCHPUSB
+Driver\Release” directory.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><a name="_Demo02"></a><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Device_WinUSB">Device – WinUSB – Simple
+Custom Demo</a><span style='mso-bookmark:Device_WinUSB'><span style='font-size:
+11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Device_WinUSB'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Device – WinUSB – Simple Custom
+Demo</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>WinUSB is a vendor class driver
+provided by Microsoft for use with Windows XP, <st1:place w:st="on">Vista</st1:place>,
+and future operating systems.<span style='mso-spacerun:yes'>  </span>WinUSB
+allows users to write custom USB applications that use bulk, interrupt, or
+control transfers.<span style='mso-spacerun:yes'>  </span></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This demo provides an example
+application that sends simple pushbutton and LED commands from the host to the
+device.<span style='mso-spacerun:yes'>  </span>This demo is run the same way
+that the “<a href="#Device_Simple_Custom_Demo">USB Device – HID – Simple Custom
+Demo</a>” is run except it uses WinUSB in place of the HID driver.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>WinUSB devices require .inf
+files.<span style='mso-spacerun:yes'>  </span>These files can be found in the
+“&lt;Install Directory&gt;\USB Device – WinUSB – Simple Custom Demo\Driver and
+inf” folder.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="host_cdc_seral_demo">USB Host – CDC –
+Serial Demo</a> </h3>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Host – CDC – Serial Demo</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for enumeration, and it also
+provides an implementation example of a communication device class (CDC).<span
+style='mso-spacerun:yes'>  </span>CDC device typically include USB devices that
+look like serial ports to the computer (such as serial to USB converters,
+modems, and some cell phone models).</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Host_HID_keyboard">Host – HID - Keyboard</a><span
+style='mso-bookmark:Host_HID_keyboard'><span style='font-size:11.0pt;
+mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Host_HID_keyboard'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Host – HID - Keyboard</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for enumeration, and it also
+provides an implementation example of a human interface device (HID) class
+keyboard host.<span style='mso-spacerun:yes'>  </span>In addition to keyboards,
+many USB barcode scanners and magnetic card readers also have HID keyboard
+modes of operation.<span style='mso-spacerun:yes'>  </span>Please refer to each
+device’s user’s guide for more information about these features.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This demo allows a user to connect
+HID keyboard (or USB barcode scanner/magnetic card reader supporting HID
+keyboard emulation) to the Explorer 16 board.<span style='mso-spacerun:yes'> 
+</span>When a key is pressed it is printed on the LCD screen.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to use
+the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Host_Data_Logger">Host – Mass Storage – </a><st1:Street
+w:st="on"><st1:address w:st="on"><span style='mso-bookmark:Host_Data_Logger'>Thumb
+  Drive</span></st1:address></st1:Street><span style='mso-bookmark:Host_Data_Logger'>
+Data logger</span><span style='mso-bookmark:Host_Data_Logger'><span
+style='font-size:11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Host_Data_Logger'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Host – Mass Storage – Thumb
+Drive Data Logger</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which enables the embedded host devices (such as the PIC24FJ256GB110 family
+devices) to talk directly to a FAT16 formatted thumb drive (memory stick).<span
+style='mso-spacerun:yes'>  </span>In this demo the thumb drive is connected to
+the USB PICtail Plus board attached to the Explorer 16.<span
+style='mso-spacerun:yes'>  </span>The embedded host reads the contents of the
+drive and sends that information through the serial port a computer so it can
+be more easily read by a user.<span style='mso-spacerun:yes'>  </span>The
+example program allows users to navigate the directories of the thumb drive,
+create new files, and log either the potentiometer data or the temperature
+sensor data into a comma separated (CSV) file.<span style='mso-spacerun:yes'> 
+</span>Once the new files are create the thumb drive can be removed from the
+Explorer 16 and attached to a computer so that the data written to the thumb
+drive and be viewed by the user.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Host_MCHPUSB">Host – MCHPUSB - Generic
+Driver Demo</a><span style='mso-bookmark:Host_MCHPUSB'><span style='font-size:
+11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Host_MCHPUSB'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Host – MCHPUSB - Generic Driver
+Demo</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for enumeration, and it also
+provides an implementation example of a custom or ‘vendor’ class host using
+Microchip’s USB general purpose driver.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project serves as a hosting
+option for the “<a href="#Device_Custom_Class">Device – MCHPUSB – Generic
+Driver</a>” device demo.<span style='mso-spacerun:yes'>  </span>This demo
+allows a user to connect a demo programmed with the device demo and display the
+temperature and potentiometer data on the Explorer 16 LCD screen.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<h3 style='margin-left:.5in'><a name="host_printer_print_screen">USB Host –
+Printer – Print Screen Demo</a></h3>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Host – Printer – Print Screen
+Demo</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for enumeration, and it also
+provides an implementation example of a printer host.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project allows users to write
+data on the Graphics PICtail+ daughter board and print that image either on a
+full sheet printer or a point of sale (POS) printer.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install Directory&gt;\Microchip\USB\Documentation\Getting
+Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="host_printer_simple_full">USB Host –
+Printer – Simple Full Sheet Demo</a></h3>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Host – Printer – Simple Full
+Sheet Demo</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for enumeration, and it also
+provides an implementation example of a printer host.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project shows a simple
+example how to print to a full sheet printer.<span style='mso-spacerun:yes'> 
+</span>It demos printing different fonts, images, and other objects available
+in the printer library.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="host_simple_pos">USB Host – Printer –
+Simple POS Demo</a></h3>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Host – Printer – Simple POS Demo</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for enumeration, and it also
+provides an implementation example of a printer host.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project shows a simple
+example how to print to a point of sales (POS) printer.<span
+style='mso-spacerun:yes'>  </span>This demo shows how to print images,
+different fonts, barcodes (when possible), and other objects available in the
+printer library.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="otg_mchpusb">USB OTG – MCHPUSB – Generic
+Driver Demo</a></h3>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB OTG – MCHPUSB – Generic Driver
+Demo</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project contains USB firmware
+which handles the USB chapter 9 requests needed for enumeration, and it also
+provides an implementation example of an OTG device using the MCHPUSB custom
+class driver as the demo class.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This project shows an example of a
+full OTG device using the MCHPUSB vendor class driver.<span
+style='mso-spacerun:yes'>  </span>This demo shows how host negotiation protocol
+(HNP) works.<span style='mso-spacerun:yes'>  </span>This demo also provides an example
+of session request protocol (SRP).</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="WM_DEVICECHANGE_example">USB PC -
+WM_DEVICECHANGE Demo</a><span style='mso-bookmark:WM_DEVICECHANGE_example'><span
+style='font-size:11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:WM_DEVICECHANGE_example'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB PC - WM_DEVICECHANGE Demo</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This is a simple application
+written in Visual C++.net Express™ edition.<span style='mso-spacerun:yes'> 
+</span>This application gives an example of how to register for a
+WM_DEVICECHANGE notification on Windows operating systems.<span
+style='mso-spacerun:yes'>  </span>The WM_DEVICECHANGE feature allows
+applications to be notified when a hardware change has occurred on the
+computer.<span style='mso-spacerun:yes'>  </span>This example can be used to
+determine when a targeted device is plugged into a computer or removed from a
+computer.<span style='mso-spacerun:yes'>  </span>By registering for these
+notifications, application no longer need to periodically search to see if the
+device has arrived.<span style='mso-spacerun:yes'>  </span>Instead they are
+actively notified and can only look for their device when a change has
+occurred.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to use
+the demo please see the getting started guide for this demo located in the <a
+href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="Percompiled_Demos">USB Precompiled Demos</a><span
+style='mso-bookmark:Percompiled_Demos'><span style='font-size:11.0pt;
+mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:Percompiled_Demos'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Precompiled Demos</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Precompiled demos can be found in
+the &lt;Install Directory&gt;\USB – Precompiled Demos folder for each of the
+previously mentioned hardware platforms.<span style='mso-spacerun:yes'> 
+</span>To use these hex files with standard Microchip development tools such as
+MPLAB IDE and the MPLAB ICD2 programmer, open MPLAB IDE, click “Configure <span
+style='font-family:Wingdings;mso-ascii-font-family:Arial;mso-hansi-font-family:
+Arial;mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>à</span></span>
+Select Device”, then choose PIC18F4550 for the PICDEM FS USB Demo Board, or
+PIC18F87J50 for the PIC18F87J50 FS USB Demo PIM.<span
+style='mso-spacerun:yes'>  </span>Make sure an appropriate programmer is
+connected and has been selected.<span style='mso-spacerun:yes'>  </span>Then click
+“File <span style='font-family:Wingdings;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial;mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>à</span></span>
+Import” and import the .hex file to be used.<span style='mso-spacerun:yes'> 
+</span>Then use the “Programmer <span style='font-family:Wingdings;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial;mso-char-type:symbol;mso-symbol-font-family:
+Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>à</span></span>
+Program” menu choice to restore the device.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>For more information about how to
+use each of these demos, please see the getting started guides for each demo
+located in the <a href="Getting%20Started">“&lt;Install
+Directory&gt;\Microchip\USB\Documentation\Getting Started” directory.</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2 style='margin-left:27.0pt;text-indent:-27.0pt;mso-list:l0 level2 lfo1;
+tab-stops:list 27.0pt .55in'><a name="_Toc175736804"></a><a
+name="_USB_Tools/Code_for_the_PC"></a><a name="_USB_Tools/Code_for"></a><![if !supportLists]><span
+style='mso-bookmark:_Toc175736804'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>3.1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></span><![endif]><span
+style='mso-bookmark:_Toc175736804'>USB Tools/Code for the PC</span><span
+style='mso-bookmark:_Toc175736804'></span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:27.0pt'><a name="PC_Tools_Custom_driver"></a><a
+name="_Toc175736805"></a><a name="_Microchip_General_Purpose_(Custom_C"></a><span
+style='mso-bookmark:PC_Tools_Custom_driver'><span style='mso-bookmark:_Toc175736805'>Microchip
+General Purpose (Custom/Vendor Class) USB Driver</span></span><span
+style='mso-bookmark:_Toc175736805'></span><span style='mso-bookmark:PC_Tools_Custom_driver'><span
+style='font-size:11.0pt;mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:PC_Tools_Custom_driver'></span>
+
+<p class=MsoNormal style='margin-left:63.0pt'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Tools\MCHP Custom Driver\MCHPUSB
+Driver\Release</p>
+
+<p class=MsoNormal style='margin-left:63.0pt'>Microchip provides a general
+purpose Windows driver which can be used by Windows applications to interface
+with a custom class USB device.<span style='mso-spacerun:yes'>  </span>This
+driver will not be necessary in many USB applications, such as USB HID class
+devices, which would normally use built in HID class drivers which distribute
+with the OS.</p>
+
+<p class=MsoNormal style='margin-left:63.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:63.0pt'>For USB applications that do not
+readily fit within the constraints of these other device class options,
+Microchip’s general purpose driver may be used.<span style='mso-spacerun:yes'> 
+</span>Windows applications can access USB devices either by directly
+interfacing with the driver (mchpusb.sys), or they may indirectly use the
+driver through a pre-compiled library.</p>
+
+<p class=MsoNormal style='margin-left:63.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:63.0pt'>The custom class firmware
+examples are intended to be used with the general purpose USB driver.</p>
+
+<p class=MsoNormal style='margin-left:63.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:63.0pt'>After installation, the release
+notes for the general purpose USB driver are located at: &lt;Install
+Directory&gt;\Microchip\USB\Utilities\MCHP Custom Driver\MCHPUSB Driver\MCHPUSB
+Driver Release Notes.htm</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="PC_Tools_DLL_source"></a><a
+name="_Toc175736806"></a><a name="_MPUSBAPI_Library_and_DLL_Source"></a><span
+style='mso-bookmark:PC_Tools_DLL_source'><span style='mso-bookmark:_Toc175736806'>MPUSBAPI
+Library and DLL Source</span></span><span style='mso-bookmark:_Toc175736806'></span><span
+style='mso-bookmark:PC_Tools_DLL_source'><span style='font-size:11.0pt;
+mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:PC_Tools_DLL_source'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Tools\MCHPUSB Custom
+Driver\Mpusbapi</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>A custom class Windows application
+using the Microchip General Purpose USB driver may interface directly with the
+driver (mchpusb.sys).<span style='mso-spacerun:yes'>  </span>Doing so directly requires
+more effort and more time to learn than using a pre-compiled library that
+exposes a simple to use API including basic functions like open(), read(),
+write(), and close().</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>The MPUSBAPI.DLL file is a library
+which provides a number of functions including the basic ones needed for
+reading and writing to a USB device.<span style='mso-spacerun:yes'>  </span>A
+list of the functions available, and the calling conventions for those
+functions is currently documented in the form of inline comments in the source
+code for the DLL file.<span style='mso-spacerun:yes'>  </span>The DLL is
+compiled using Borland® C++ Builder™ 6 development environment, and the source
+code is provided in the “&lt;install
+directory&gt;\Microchip\USB\Utilities\MCHPUSB Custom
+Driver\Mpusbapi\Dll\Borland_C\Source” directory.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>A load time linking and a run time
+linking example showing how to use the DLL are included in “&lt;install
+directory&gt;\Microchip\USB\Utilities\MCHPUSB Custom Driver\Mpusbapi\Example
+Applications\Borland_C” directory.</p>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h3 style='margin-left:.5in'><a name="PC_Tools_PDFSUSB"></a><a
+name="_Toc175736807"></a><a name="_PICDEM_FS_USB_Demo_Tool_“Pdfsusb”"></a><span
+style='mso-bookmark:PC_Tools_PDFSUSB'><span style='mso-bookmark:_Toc175736807'>PICDEM
+FS USB Demo Tool “Pdfsusb”</span></span><span style='mso-bookmark:_Toc175736807'></span><span
+style='mso-bookmark:PC_Tools_PDFSUSB'><span style='font-size:11.0pt;mso-bidi-font-size:
+13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:PC_Tools_PDFSUSB'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Tools\Pdfsusb</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This computer program demonstrates
+basic USB communication using the Microchip Custom class driver with a Windows
+GUI based application.<span style='mso-spacerun:yes'>  </span>The USB Device –
+MCHPUSB – Generic Driver Demo Firmware is intended to be used in conjunction
+with the “PICDEM FS USB Demo Tool” which can be launched by executing the
+PDFSUSB.exe file.<span style='mso-spacerun:yes'>  </span>The features and use
+of this application are described in the PICDEM FS USB Demonstration Board
+User’s Guide (DS51526).<span style='mso-spacerun:yes'>  </span></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This application was originally
+intended to be used with the PICDEM FS USB Demo Board, but it can be used with
+the other available USB platforms as well.<span style='mso-spacerun:yes'> 
+</span>The demo tool makes use of hardware features, such as a temperature
+sensor and potentiometer which are not found on all of the hardware
+platforms.<span style='mso-spacerun:yes'>  </span>In order to use the demo tool
+with the PIC18F87J50 PIM, the PIM should be used while it is plugged into the
+HPC Explorer board.<span style='mso-spacerun:yes'>  </span>The HPC Explorer
+board has the needed potentiometer, temperature sensor, and additional LEDs.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>In order to use the PICDEM FS USB
+Demo Tool with any of the hardware platforms, the board will need to be
+programmed with the code generated by the Custom class device example project
+or from the custom class precompiled examples.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-left:.5in'><a name="PC_Tools_USBConfig">USBConfig.exe Tool</a><span
+style='mso-bookmark:PC_Tools_USBConfig'><span style='font-size:11.0pt;
+mso-bidi-font-size:13.0pt'><o:p></o:p></span></span></h3>
+
+<span style='mso-bookmark:PC_Tools_USBConfig'></span>
+
+<p class=MsoNormal style='margin-left:1.0in'><b style='mso-bidi-font-weight:
+normal'>See:</b> &lt;Install Directory&gt;\USB Tools\USBConfig Tool</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Each of the firmware projects
+requires a usb_config.h that defines several macros that the USB stack uses to
+know how it should perform.<span style='mso-spacerun:yes'>  </span>In the case
+of the embedded host applications there is also a .c file that needs to be create
+that describes the Targeted Peripheral List (TPL).<span
+style='mso-spacerun:yes'>  </span>The TPL is a list of supported devices.<span
+style='mso-spacerun:yes'>  </span>This .c file also contains various
+information that the stack needs to know in order to load and execute the
+correct client drivers for these devices.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><span
+style='mso-spacerun:yes'> </span>The USBConfig.exe tool is a simple to use interface
+to help generate the files required by the USB stack.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;margin-bottom:.0001pt;mso-layout-grid-align:none;text-autospace:
+none'>At the moment the USBConfig.exe tool is only functional for the embedded
+host examples.<span style='font-size:10.5pt;font-family:"Arial Narrow";
+mso-bidi-font-family:"Arial Narrow"'> </span><span style='font-size:8.5pt;
+font-family:"MS Shell Dlg"'><o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h1 style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in'><a name="known_limitations"></a><a name="_Toc175736814"></a><a
+name="_Toc187228027"></a><a name="_Toc208371842"></a><a name="_Toc163987711"><span
+style='mso-bookmark:_Toc208371842'><span style='mso-bookmark:_Toc187228027'><span
+style='mso-bookmark:_Toc175736814'><span style='mso-bookmark:known_limitations'><![if !supportLists]><span
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>Known
+</span></span></span></span></a><span style='mso-bookmark:_Toc208371842'><span
+style='mso-bookmark:_Toc187228027'><span style='mso-bookmark:_Toc175736814'><span
+style='mso-bookmark:known_limitations'>Limitations</span></span></span></span><span
+style='mso-bookmark:known_limitations'></span></h1>
+
+<span style='mso-bookmark:known_limitations'></span>
+
+<h2 style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo3;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-fareast-font-family:
+Arial'><span style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>PIC32 Host Example support</h2>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>This
+      distribution only supports PIC32 host demos for the Printer class.<span
+      style='mso-spacerun:yes'>  </span>PIC32 Host support for other classes
+      can be found in the PIC32 specific download in the software section of <a
+      href="http://www.microchip.com/usb">www.microchip.com/usb</a>.</li>
+ </ul>
+</ol>
+
+<h2 style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo3;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-fareast-font-family:
+Arial'><span style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>PIC32 Device support</h2>
+
+<ol style='margin-top:0in' start=2 type=1>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>This
+      distribution only supports PIC32MX460F512L family devices revision B3 or
+      later. <span style='mso-spacerun:yes'> </span></li>
+ </ul>
+</ol>
+
+<h2 style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo3;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-fareast-font-family:
+Arial'><span style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>HID Host Keyboard Example</h2>
+
+<ol style='margin-top:0in' start=3 type=1>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>Neither
+      Compound nor composite devices are supported.</li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>The “~”
+      prints as an arrow character instead (“&#8594;”).<span
+      style='mso-spacerun:yes'>  </span>This is an effect of the LCD screen on
+      the Explorer 16.<span style='mso-spacerun:yes'>   </span>The ascii
+      character for “~” is remapped in the LCD controller.</li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>The
+      “\” prints as a “¥” character instead.<span style='mso-spacerun:yes'> 
+      </span>This is an effect of the LCD screen on the Explorer 16.<span
+      style='mso-spacerun:yes'>   </span>The ascii character for “\” is
+      remapped in the LCD controller.</li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>Backspace
+      and arrow keys may have issues on Explorer 16 boards with certain LCD
+      modules.</li>
+ </ul>
+</ol>
+
+<h2 style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo3;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-fareast-font-family:
+Arial'><span style='mso-list:Ignore'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>MCHPUSB Driver Example .inf</h2>
+
+<ol style='margin-top:0in' start=4 type=1>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>When
+      adding a VID/PID string to the “%DESCRIPTION%=DriverInstall” and
+      “%DESCRIPTION%=DriverInstall64” sections in the mchpusb.inf file, remove
+      one or more of the pre-existing VID/PID strings from the list.<span
+      style='mso-spacerun:yes'>  </span>There is a limit to the maximum number
+      of VID/PID strings that can be supported simultaneously.<span
+      style='mso-spacerun:yes'>  </span>If the list contains too many entries,
+      the following error message will occur when installing the driver under <st1:place
+      w:st="on">Vista</st1:place>:<span style='mso-spacerun:yes'> 
+      </span>&quot;The Data Area Passed to a System Call Is Too Small&quot;</li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><b><i><span
+     style='font-size:12.0pt'>CDC PC Examples in the Windows <st1:place w:st="on">Vista</st1:place>
+     64-bit operating system<o:p></o:p></span></i></b></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'><span
+      style='mso-spacerun:yes'> </span>The CDC PC example code does not run as
+      implemented on the 64-bit version of the Windows Vista operating
+      system.<span style='mso-spacerun:yes'>  </span>The .NET SerialPort object
+      does not appear to receive data as implemented in these examples.<span
+      style='mso-spacerun:yes'>  </span></li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><b><i><span
+     style='font-size:12.0pt'>HID Keyboard Example<o:p></o:p></span></i></b></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>The
+      HID keyboard example does not work as implemented on the Windows 2000
+      operating system or any earlier revisions of the Windows operating
+      systems.</li>
+ </ul>
+</ol>
+
+<h2 style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo3;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-fareast-font-family:
+Arial'><span style='mso-list:Ignore'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Installation Issues</h2>
+
+<ol style='margin-top:0in' start=7 type=1>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>The
+      MCHPFSUSB release v2.1 or later may cause issues with version 4.18 or
+      earlier of the TCP/IP stack if installed into the same directory.<span
+      style='mso-spacerun:yes'>  </span>Version 4.5 or later of the TCP/IP
+      stack should not have an issue with MCHPFSUSB.<span
+      style='mso-spacerun:yes'>  </span>These issues were caused by a change in
+      one of the common definition files (Compiler.h).</li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>Installing
+      the MCHPFSUSB release v2.x into the same directory as the PIC32 USB
+      software distribution will cause one or both of the firmware examples to
+      no longer work.<span style='mso-spacerun:yes'>  </span>Please install
+      these two distributions into different directories.</li>
+ </ul>
+</ol>
+
+<h2 style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo3;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-fareast-font-family:
+Arial'><span style='mso-list:Ignore'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>MSD device support</h2>
+
+<ol style='margin-top:0in' start=8 type=1>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>The
+      Mass Storage Device (MSD) class driver demos have not currently been
+      ported to the PICDEM FS USB board.<span style='mso-spacerun:yes'> 
+      </span></li>
+ </ul>
+</ol>
+
+<p class=MsoNormal style='margin-left:.75in'><o:p>&nbsp;</o:p></p>
+
+<h1 style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in'><a name="_Toc208371843"><![if !supportLists]><span
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>Coming
+Soon – What’s next?</a></h1>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo4;tab-stops:list .5in'>V2.4 –
+     target release in February</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l4 level2 lfo4;
+tab-stops:list .75in'><![if !supportLists]><span style='font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Interrupt driven stack option for device stack</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l4 level2 lfo4;
+tab-stops:list .75in'><![if !supportLists]><span style='font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Expanded OTG/Dual Role examples</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l4 level2 lfo4;
+tab-stops:list .75in'><![if !supportLists]><span style='font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>LibUSB vendor class device examples</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l4 level2 lfo4;
+tab-stops:list .75in'><![if !supportLists]><span style='font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Increased support for composite devices in host
+stack</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l4 level2 lfo4;
+tab-stops:list .75in'><![if !supportLists]><span style='font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Increased PIC32 host example support</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<h1 style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in'><a name="_Toc175736813"></a><a name="_Toc208371844"><span
+style='mso-bookmark:_Toc175736813'><![if !supportLists]><span style='mso-fareast-font-family:
+Arial'><span style='mso-list:Ignore'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>USB Compliance Test ID (TID) Information</span></a></h1>
+
+<p class=MsoNormal style='margin-left:.25in'>When getting a USB peripheral
+officially compliance tested, a peripheral checklist must be filled out and
+submitted to the USB-IF.<span style='mso-spacerun:yes'>  </span>These
+checklists are provided by the USB-IF.<span style='mso-spacerun:yes'>  </span>On
+the peripheral checklist, one of the requested items is the TID number
+associated with the USB silicon used in the device.<span
+style='mso-spacerun:yes'>  </span>Test ID numbers can be found at the <st1:place
+w:st="on"><st1:PlaceName w:st="on">USB</st1:PlaceName> <st1:PlaceName w:st="on">Design</st1:PlaceName>
+ <st1:PlaceType w:st="on">Center</st1:PlaceType></st1:place>:</p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://www.microchip.com/usb">http://www.microchip.com/usb</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h1 style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in'><a name="_Toc208371845"><![if !supportLists]><span
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>Alternative
+Software Solutions</a></h1>
+
+<p class=MsoNormal>There are many third party software solutions available in
+designing your USB application.<span style='mso-spacerun:yes'>  </span>A few
+examples are listed below:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>SnoopyPro (software based USB traffic logger)</p>
+
+<p class=MsoNormal style='text-indent:.5in'>- <a
+href="http://sourceforge.net/projects/usbsnoop/">http://sourceforge.net/projects/usbsnoop/</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>HIDmaker <i style='mso-bidi-font-style:normal'><span
+style='color:red'>FS</span></i> (example USB firmware/software generator)</p>
+
+<p class=MsoNormal style='text-indent:.5in'>- <a
+href="http://www.tracesystemsinc.com/usb_tools.ivnu">http://www.tracesystemsinc.com/usb_tools.ivnu</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>USB Software Solutions from Jungo® (assorted USB tools and
+driver generator)</p>
+
+<p class=MsoNormal style='text-indent:.5in'>- <a
+href="http://www.jungo.com/products_st.html">http://www.jungo.com/products_st.html</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Beagle USB 12 – (hardware based USB traffic logger)</p>
+
+<p class=MsoNormal style='text-indent:.5in'><span
+style='mso-spacerun:yes'> </span>- <a
+href="http://www.totalphase.com/products/beagle_usb12">http://www.totalphase.com/products/beagle_usb12</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h1 style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in'><a name="_Toc208371846"></a><a name="_Toc175736808"></a><a
+name="_Ref118886796"></a><a name="_Toc163987703"></a><a
+name="PC_Operating_System_Support_List"></a><a name="_Toc163987704"></a><a
+name="Reference_Documents"></a><![if !supportLists]><span style='mso-bookmark:
+_Toc208371846'><span style='mso-bookmark:_Toc175736808'><span style='mso-bookmark:
+_Ref118886796'><span style='mso-fareast-font-family:Arial'><span
+style='mso-list:Ignore'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span></span></span></span><![endif]><span style='mso-bookmark:
+_Toc208371846'><span style='mso-bookmark:_Toc175736808'><span style='mso-bookmark:
+_Ref118886796'>Online Reference Documents</span></span></span>&nbsp;</h1>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Note:</b> Links provided below point to the latest version of the
+documents to date. Please check <a href="http://www.microchip.com/">www.microchip.com</a>
+for the latest version.</p>
+
+<h2 style='margin-left:.65in'><a name="_Toc175736809">Demo Board User’s Guides</a></h2>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/DeviceDoc/51526a.pdf">PICDEM™ FS
+USB Demonstration Board User’s Guide – 51526a</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/DeviceDoc/51678a.pdf">PIC18F87J50
+FS USB Plug-In Module User’s Guide – 51678a</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/DeviceDoc/USB%20PICTail%20+%20Info%20Sheet%2039909a.pdf">USB
+PICTail Plus for Explorer 16 – 39909a</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<h2 style='margin-left:.65in'><a name="_Toc175736810">Device Family Data Sheets</a></h2>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/DeviceDoc/39775b.pdf">PIC18F87J50
+Family Data Sheet – 39775b</a> (or link to product page <a
+href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1335&amp;dDocName=en027172">here</a>)</p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/DeviceDoc/39760d.pdf">PIC18F4450
+Family Data Sheet – 39760d</a> (or link to product page <a
+href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1335&amp;dDocName=en023498">here</a>)</p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/DeviceDoc/39632d.pdf">PIC18F4550
+Family Data Sheet – 39632d</a> (or link to product page <a
+href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1335&amp;dDocName=en010300">here</a>)</p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/DeviceDoc/39887b.pdf">PIC18F4553
+Family Data Sheet – 39887b</a> (or link to product page <a
+href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1335&amp;dDocName=en530214">here</a>)</p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/DeviceDoc/39897b.pdf">PIC24FJ256GB110
+Family Data Sheet – 39897b</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<h2 style='margin-left:.65in'><a name="_Toc175736811">Application Notes</a></h2>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/DeviceDoc/51679b.pdf">Microchip USB
+Device Firmware Framework User’s Guide</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/AppNotes/00950b.pdf">AN950 – Power
+Management for PIC18 USB Microcontrollers with nanoWatt Technology</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/AppNotes/00956b.pdf">AN956 –
+Migrating Applications to USB from RS-232 UART with Minimal Impact on PC
+Software</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/AppNotes/USB_Host_Stack_01140a.pdf">AN1140
+– USB Embedded Host Stack</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/AppNotes/01141a.pdf">AN1141 – USB
+Embedded Host Stack Programmer’s Guide</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/AppNotes/01142A.pdf">AN1142 – USB
+Mass Storage Class on an Embedded Host</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span class=MsoHyperlink><a
+href="http://ww1.microchip.com/downloads/en/AppNotes/01144a.pdf">AN1144 - USB
+Human Interface Device Class on an Embedded Host</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/AppNotes/USB_MSD_Host_01145a.pdf">AN1145
+– Using a USB Flash Drive on an Embedded Host</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span lang=DE style='mso-ansi-language:
+DE'><a href="http://ww1.microchip.com/downloads/en/AppNotes/01189a.pdf"><span
+lang=EN-US style='mso-ansi-language:EN-US'>AN1189 – Implementing a Mass Storage
+Device Using the Microchip</span></a></span><span lang=DE> </span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/AppNotes/01212a.pdf">AN1212 – Using
+USB Keyboard with an Embedded Host</a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://ww1.microchip.com/downloads/en/AppNotes/01233a.pdf">AN1233 – USB
+Printer Class on an Embedded Host</a><span class=MsoHyperlink><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<h2 style='margin-left:.65in'><a name="_Toc175736812"></a><st1:place w:st="on"><st1:PlaceName
+ w:st="on"><span style='mso-bookmark:_Toc175736812'>USB</span></st1:PlaceName><span
+ style='mso-bookmark:_Toc175736812'> <st1:PlaceName w:st="on">Design</st1:PlaceName>
+ <st1:PlaceType w:st="on">Center</st1:PlaceType></span></st1:place></h2>
+
+<p class=MsoNormal style='margin-left:.25in'><a
+href="http://www.microchip.com/usb">http://www.microchip.com/usb</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><a name="_Toc163987709"></a><a name="_Ref118886844"></a><a
+name="Known_Problems"></a><a name="_Ref118886852"></a><a name="_Toc163987710"></a><o:p>&nbsp;</o:p></p>
+
+<h1 style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in'><a name="_Toc163987714"></a><a name="_Toc175736816"></a><a
+name="_Toc208371847"><span style='mso-bookmark:_Toc175736816'><span
+style='mso-bookmark:_Toc163987714'><![if !supportLists]><span style='mso-fareast-font-family:
+Arial'><span style='mso-list:Ignore'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Customer Support</span></span></a></h1>
+
+<h2><a name="_Toc175736817">The Microchip Web Site</a></h2>
+
+<p class=MsoNormal>Microchip provides online support via our web site at <a
+href="http://www.microchip.com/">http://www.microchip.com</a>. This web site is
+used as a means to make files and information easily available to customers.
+Accessible by using your favorite Internet browser, the web site contains the
+following information:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo5;tab-stops:list .5in'>Product
+     Support - Data sheets and errata, application notes and sample programs,
+     design resources, user's guides and hardware support documents, latest
+     software releases and archived software</li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo5;tab-stops:list .5in'>General
+     Technical Support - Frequently Asked Questions (FAQs), technical support
+     requests (<a href="http://support.microchip.com/">http://support.microchip.com</a>),
+     online discussion groups/forums (<a href="http://forum.microchip.com/">http://forum.microchip.com</a>,
+     or more specifically the <a
+     href="http://forum.microchip.com/tt.aspx?forumid=102">USB forum topic</a>),
+     Microchip consultant program member listing</li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo5;tab-stops:list .5in'>Business
+     of Microchip - Product selector and ordering guides, latest Microchip
+     press releases, listing of seminars and events, listings of Microchip
+     sales offices, distributors and factory representatives</li>
+</ul>
+
+<h2><a name="_Toc175736818">Development Systems Customer Change Notification
+Service</a></h2>
+
+<p class=MsoNormal>Microchip's customer notification service helps keep
+customers current on Microchip products. Subscribers will receive e-mail
+notification whenever there are changes, updates, revisions or errata related
+to a specified product family or development tool of interest.</p>
+
+<p class=MsoNormal>To register, access the Microchip web site at
+www.microchip.com, click on Customer Change Notification and follow the
+registration instructions.</p>
+
+<h2><a name="_Toc175736819">Additional Support</a></h2>
+
+<p class=MsoNormal>Users of Microchip products can receive assistance through
+several channels:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo6;tab-stops:list .5in'>Distributor
+     or Representative</li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo6;tab-stops:list .5in'>Local
+     Sales Office</li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo6;tab-stops:list .5in'>Field
+     Application Engineer (FAE)</li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo6;tab-stops:list .5in'>Technical
+     Support</li>
+</ul>
+
+<p class=MsoNormal>Customers should contact their distributor, representative
+or field application engineer (FAE) for support. Local sales offices are also
+available to help customers. A listing of sales offices and locations is
+available on our website.</p>
+
+<p class=MsoNormal>Technical support is available through the web site at: <a
+href="http://support.microchip.com/">http://support.microchip.com</a><a
+name="_Toc163987715"></a><a name="License_Agreements"></a></p>
+
+<h2><a name="_Toc175736820">Training</a></h2>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo7;tab-stops:list .5in'>Regional
+     Training Centers: <a href="http://www.microchip.com/rtc">http://www.microchip.com/rtc</a></li>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo7;tab-stops:list .5in'>MASTERs
+     Conference: <a href="http://www.microchip.com/masters">http://www.microchip.com/masters</a></li>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo7;tab-stops:list .5in'>Webseminars:
+     <a href="http://techtrain.microchip.com/webseminars/QuickList.aspx">http://techtrain.microchip.com/webseminars/QuickList.aspx</a></li>
+</ul>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-style:normal;
+mso-bidi-font-style:italic'>Trademarks:<o:p></o:p></span></h2>
+
+<p class=MsoNormal><i><span style='font-size:8.0pt;color:black'>The Microchip
+name and logo, the Microchip logo, MPLAB, and PIC are registered trademarks of
+Microchip Technology Incorporated in the <st1:place w:st="on"><st1:country-region
+ w:st="on">U.S.A.</st1:country-region></st1:place> and other countries.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><i><span style='font-size:8.0pt;color:black'>PICDEM is a
+trademark of Microchip Technology Incorporated in the <st1:place w:st="on"><st1:country-region
+ w:st="on">U.S.A.</st1:country-region></st1:place> and other countries.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><i><span style='font-size:8.0pt;color:black'>Microsoft,
+Windows, and Windows Vista are either registered trademarks or trademarks of
+Microsoft Corporation in the <st1:place w:st="on"><st1:country-region w:st="on">United
+  States</st1:country-region></st1:place> and/or other countries.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><i><span style='font-size:8.0pt;color:black'>Borland, and
+C++ Builder are trademarks or registered trademarks of Borland Software
+Corporation in the <st1:place w:st="on"><st1:country-region w:st="on">United
+  States</st1:country-region></st1:place> and other countries.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><i><span style='font-size:8.0pt;color:black'>Linux is the
+registered trademark of Linus Torvalds in the <st1:place w:st="on"><st1:country-region
+ w:st="on">U.S.</st1:country-region></st1:place> and other countries.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><i><span style='font-size:8.0pt;color:black'>PostScript is a
+registered trademark of Adobe®</span></i><span style='font-size:8.0pt'><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

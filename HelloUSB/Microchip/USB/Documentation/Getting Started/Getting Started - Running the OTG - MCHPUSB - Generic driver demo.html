@@ -1,0 +1,668 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List
+href="Getting%20Started%20-%20Running%20the%20OTG%20-%20MCHPUSB%20-%20Generic%20driver%20demo_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="Getting%20Started%20-%20Running%20the%20OTG%20-%20MCHPUSB%20-%20Generic%20driver%20demo_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Getting Started: Running the “OTG - MCHPUSB - Generic driver demo”</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="country-region"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>C12109</o:Author>
+  <o:LastAuthor>C12109</o:LastAuthor>
+  <o:Revision>109</o:Revision>
+  <o:TotalTime>263</o:TotalTime>
+  <o:Created>2008-03-29T21:04:00Z</o:Created>
+  <o:LastSaved>2008-09-23T22:50:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1162</o:Words>
+  <o:Characters>6627</o:Characters>
+  <o:Company>Microchip Technology Inc</o:Company>
+  <o:Lines>55</o:Lines>
+  <o:Paragraphs>15</o:Paragraphs>
+  <o:CharactersWithSpaces>7774</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>90</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	font-style:italic;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-locked:yes;
+	mso-style-link:"Plain Text";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 65.95pt 1.0in 65.95pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="22530"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoPlainText align=center style='text-align:center'><a
+name="_Toc194573682"><b style='mso-bidi-font-weight:normal'><u><span
+style='font-size:16.0pt;font-family:Arial'>Getting Started: Running the “OTG –
+MCHPUSB – Generic driver demo” demo</span></u></b></a><b style='mso-bidi-font-weight:
+normal'><u><span style='font-size:16.0pt;font-family:Arial'><o:p></o:p></span></u></b></p>
+
+<p class=MsoPlainText><span style='font-size:16.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><!--[if supportFields]><span
+style='font-family:Arial'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>TOC \o &quot;1-3&quot; \h \z \u <span
+style='mso-element:field-separator'></span></span><![endif]--><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc201397582">Required
+Hardware:<span style='color:windowtext;display:none;mso-hide:screen;text-decoration:
+none;text-underline:none'><span style='mso-tab-count:1 dotted'> </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
+_Toc201397582 \h </span><span style='color:windowtext;text-decoration:none;
+text-underline:none'><span style='display:none;mso-hide:screen'><span
+style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200300031003300390037003500380032000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc201397583">Configuration
+1: Explorer 16<span style='color:windowtext;display:none;mso-hide:screen;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
+_Toc201397583 \h </span><span style='color:windowtext;text-decoration:none;
+text-underline:none'><span style='display:none;mso-hide:screen'><span
+style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200300031003300390037003500380033000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc201397584">Configuring
+the Hardware:<span style='color:windowtext;display:none;mso-hide:screen;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'> </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
+_Toc201397584 \h </span><span style='color:windowtext;text-decoration:none;
+text-underline:none'><span style='display:none;mso-hide:screen'><span
+style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200300031003300390037003500380034000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc201397585">Configuration
+1: Explorer 16<span style='color:windowtext;display:none;mso-hide:screen;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
+_Toc201397585 \h </span><span style='color:windowtext;text-decoration:none;
+text-underline:none'><span style='display:none;mso-hide:screen'><span
+style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200300031003300390037003500380035000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc201397586">Firmware<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
+_Toc201397586 \h </span><span style='color:windowtext;text-decoration:none;
+text-underline:none'><span style='display:none;mso-hide:screen'><span
+style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>3<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200300031003300390037003500380036000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc201397587">Running
+the Demo<span style='color:windowtext;display:none;mso-hide:screen;text-decoration:
+none;text-underline:none'><span style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
+_Toc201397587 \h </span><span style='color:windowtext;text-decoration:none;
+text-underline:none'><span style='display:none;mso-hide:screen'><span
+style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>4<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200300031003300390037003500380037000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 479.6pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc201397588">Trademarks:<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'> </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
+_Toc201397588 \h </span><span style='color:windowtext;text-decoration:none;
+text-underline:none'><span style='display:none;mso-hide:screen'><span
+style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>4<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003200300031003300390037003500380038000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoPlainText><!--[if supportFields]><span style='font-family:Arial'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-family:
+Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h2><a name="_Toc201397582"></a><a name="required_hardware"><span
+style='mso-bookmark:_Toc201397582'>Required Hardware</span></a><span
+style='mso-bookmark:_Toc201397582'>:</span></h2>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span
+style='mso-spacerun:yes'>  </span>To run this project, you will need one of the
+following sets of hardware:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h3><span style='mso-spacerun:yes'>    </span><a name="_Toc201397583">Configuration
+1: Explorer 16</a></h3>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span
+style='mso-spacerun:yes'>      </span><a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA240014">PIC24FJ256GB110
+Plug-In-Module (PIM)</a> (MA240014)<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span
+style='mso-spacerun:yes'>      </span><a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM240001">Explorer
+16</a> (DM240001)<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span style='mso-tab-count:
+1'>            </span><a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=AC164131">USB
+PICtail™ <span class=GramE>Plus</span> Daughter Card</a> (AC164131)<o:p></o:p></span></p>
+
+<h2><a name="_Toc201397584"></a><a name="configuring_the_hardware"><span
+style='mso-bookmark:_Toc201397584'>Configuring the Hardware</span></a><span
+style='mso-bookmark:_Toc201397584'>:</span></h2>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>This
+section describes how to set up the various configurations of hardware to run
+this demo.<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><a
+href="#config_3">Configuration 1: PIC24FJ256GB110 PIM + Explorer 16</a><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h3 style='text-indent:.5in'><a name="config_3"></a><a name="_Toc201397585"><span
+style='mso-bookmark:config_3'>Configuration 1: Explorer 16</span></a></h3>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>1)
+Before attaching the PIC24FJ256GB110 PIM to the Explorer 16 board, insure that
+the processor selector switch (S2) is in the “PIM” position as seen in the
+image below. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Arial'><img
+border=0 width=473 height=356 id="_x0000_i1025"
+src="../images/Explorer%2016%20(processor%20switch).JPG"><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:.5in'><span style='font-family:Arial'>2)
+Short the J7 jumper to the “PIC24” setting<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Arial'><img
+border=0 width=402 height=334 id="_x0000_i1026"
+src="../images/Explorer%2016%20(programming%20jumper).JPG"><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>3)
+Before connecting the PIC24FJ256GB110 PIM to the Explorer 16 board, remove all attached
+cables from both boards.<span style='mso-spacerun:yes'>  </span>Connect the
+PIC24FJ256GB110 PIM to the Explorer 16 board.<span style='mso-spacerun:yes'> 
+</span>Be careful when connecting the boards to insure that no pins are bent or
+damaged during the process.<span style='mso-spacerun:yes'>  </span>Also insure
+that the PIM is not shifted in any direction and that all of the headers are
+properly aligned.<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>4)<span
+style='mso-spacerun:yes'>  </span>On the USB PICTail Plus board, short jumper JP4.<span
+style='mso-spacerun:yes'>  </span>Remove all other shorts on the board.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Arial'><img
+border=0 width=365 height=499 id="_x0000_i1027"
+src="../images/USB%20PICTail+%20(OTG%20Enabled).jpg"><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>5)<span
+style='mso-spacerun:yes'>  </span>Connect the USB PICTail Plus board to either
+of the female PICTail Plus connectors or on the card edge connector (J9) at the
+edge of the Explorer 16 board.<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-size:12.0pt;
+font-family:Arial'>Note: When using the HID <span class=SpellE>bootloader</span>
+for PIC32, it is important to modify the <span class=SpellE>procdefs.ld</span>
+file to relocate the sections of code that will hold the <span class=SpellE>bootloader</span>
+and those sections that will hold the user application.<span
+style='mso-spacerun:yes'>  </span>Example modified <span class=SpellE>procdefs.ld</span>
+files have been provided with each project.<span style='mso-spacerun:yes'> 
+</span>This file is currently names “<span class=SpellE>Procdefs.ld.boot</span>”.<span
+style='mso-spacerun:yes'>  </span>When using the example project with the <span
+class=SpellE>bootloader</span> it is required to remove the “.boot” section of
+the file.<span style='mso-spacerun:yes'>  </span>This will allow MPLAB to use
+this file instead of the default linker file.<span style='mso-spacerun:yes'> 
+</span>Once the linker file is renamed, however, the project will no longer
+work without the <span class=SpellE>bootloader</span>.<span
+style='mso-spacerun:yes'>  </span>Please rename the file in order to get the
+project working again with PIC32.<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><a name=firmware></a><a name="_Toc201397586"><span
+style='mso-bookmark:firmware'><span class=Heading2Char><span style='font-size:
+14.0pt'>Firmware</span></span></span></a><span style='mso-bookmark:firmware'></span><span
+style='mso-bookmark:_Toc201397586'></span><span style='font-family:Arial'>:<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>To
+run this project, you will need to load the corresponding firmware into the
+devices.<span style='mso-spacerun:yes'>  </span>There are two methods available
+for loading the demos: Precompiled demos and source code projects.<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>Precompiled
+Demos are available in the “&lt;Install Directory&gt;\USB – Precompiled Demos”
+folders.<span style='mso-spacerun:yes'>  </span>Each demo should be prefaced
+with the hardware platform it is compiled for.<span style='mso-spacerun:yes'> 
+</span>Select the file that matches the hardware that you have and the demo
+that you want to run.<span style='mso-spacerun:yes'>  </span>For more
+information about how to load a precompiled project, please see the “Getting
+Started – Loading a precompiled demo” guide.<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>The
+source code for this demo is available in the “&lt;Install Directory&gt;\USB
+OTG – MCHPUSB – Generic Driver Demo” directory.<span style='mso-spacerun:yes'> 
+</span>In this directory you will find all of the user level source and header
+files as well as project and workspace files for each of the hardware
+platforms.<span style='mso-spacerun:yes'>  </span>Find the project (*.mcp) or
+workspace (*.<span class=SpellE>mcw</span>) file that corresponds to the
+hardware platform you wish to test.<span style='mso-spacerun:yes'> 
+</span>Compile and program the demo code into the hardware platform.<span
+style='mso-spacerun:yes'>  </span>For more help on how to compile and program
+projects, please refer to the MPLAB® help available through the help menu of
+MPLAB (Help-&gt;Topics…-&gt;MPLAB IDE).<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><a name="running_the_demo"></a><a name="_Toc201397587"><span
+style='mso-bookmark:running_the_demo'><span class=Heading2Char><span
+style='font-size:14.0pt'>Running the Demo</span></span></span></a><span
+style='mso-bookmark:running_the_demo'></span><span style='mso-bookmark:_Toc201397587'></span><span
+style='font-family:Arial'>:<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>This
+demo will require two Microchip devices to run.<span style='mso-spacerun:yes'> 
+</span>One will act as the USB host and the other will run the USB
+peripheral.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>To
+demo the full OTG functionality, program 2 sets of boards with the code
+provided in the “USB OTG – MCHPUSB – Generic driver demo” folder.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>Power
+both boards.<span style='mso-spacerun:yes'>  </span>For this demo you will need
+a micro-A to micro-B cable. <span style='mso-spacerun:yes'> </span>At the time
+of this release these cables are rare and still hard to find. <span
+style='mso-spacerun:yes'> </span>When purchasing a cable please insure that the
+ID pin on both connectors is correct. <span style='mso-spacerun:yes'> </span>On
+the A side of the cable the ID pin should be less than 10 ohms to ground. <span
+style='mso-spacerun:yes'> </span>On the B-side of the cable the ID pin should
+be more than 100k ohms to gnd. <span style='mso-spacerun:yes'> </span>There are
+several manufactures that produce micro-A to micro-B cables that are not OTG
+compliant and these cables have the ID pin connected straight through the cable
+instead of grounded on one end and floating on the other as the OTG
+specification calls for.<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>When
+the A end of the cable is plugged into either of the boards, that board will
+become host.<span style='mso-spacerun:yes'>  </span>When the B end of the cable
+is connected to either of the boards, that board will become peripheral.<span
+style='mso-spacerun:yes'>  </span>On the host board, press the S3 button (seen
+below). <span style='mso-spacerun:yes'> </span>This will cause the host to
+start supplying 5v to the peripheral. <span style='mso-spacerun:yes'> </span>At
+this point the peripheral should start to operate.<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><img src="../images/Explorer 16 + PIM + USB PICtail+ (sw6).JPG"><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>Changing
+the POT on the peripheral board will cause the LCD on the host to reflect the
+new value. <span style='mso-spacerun:yes'> </span>Similarly the temperature
+will be affected.<span style='mso-spacerun:yes'>  </span>Pressing S3 again will
+cause the host to power down the peripheral. <span
+style='mso-spacerun:yes'> </span>With the power to the peripheral off, press
+the S3 button on the peripheral. <span style='mso-spacerun:yes'> </span>This
+initiates a Session Request Protocol (SRP).<span style='mso-spacerun:yes'> 
+</span>This requests that the host power the bus again. <span
+style='mso-spacerun:yes'> </span>At this point the device should run again
+without enabling the power from the device.<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'>To
+switch roles, while both devices are power and the host is communicating to the
+peripheral, press the S6 button (seen below) on the host (the A device). <span
+style='mso-spacerun:yes'> </span>This initiates a Host Negotiate Protocol (HNP).<span
+style='mso-spacerun:yes'>  </span>This causes the A device to become the
+peripheral and the B device to become the host.<span style='mso-spacerun:yes'> 
+</span>The demo is run the same as before except that the POT on the A device
+is now read on the LCD of the B device. <span
+style='mso-spacerun:yes'> </span>To return to the original configuration, press
+the S6 button on the B device (now the host). <span
+style='mso-spacerun:yes'> </span>This will suspend the bus and return host
+control to the A device.<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial'><img src="../images/Explorer 16 + PIM + USB PICtail+ (sw2).JPG"><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:Arial;
+background:yellow;mso-highlight:yellow'>Note: when <span class=SpellE>bootloading</span>
+this application using the HID <span class=SpellE>bootloader</span>, please
+make sure that the “Allow Configuration Word Programming” box is checked.<span
+style='mso-spacerun:yes'>  </span>This is required to be able to program the
+interrupt vectors on PIC24 products.<span style='mso-spacerun:yes'>  </span>As
+this demo requires interrupts it will not work without this feature enabled.</span><span
+style='font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h2><a name="_Toc195786561"></a><a name="_Toc195786501"></a><a
+name="_Toc195786411"></a><a name="_Toc201397588"><span style='mso-bookmark:
+_Toc195786411'><span style='mso-bookmark:_Toc195786501'><span style='mso-bookmark:
+_Toc195786561'>Trademarks:</span></span></span></a></h2>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:Arial;color:black'>The Microchip name and logo, the Microchip logo,
+MPLAB, and PIC are registered trademarks of Microchip Technology Incorporated
+in the <st1:place w:st="on"><st1:country-region w:st="on">U.S.A.</st1:country-region></st1:place>
+and other countries.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span class=GramE><i><span
+style='font-size:10.0pt;font-family:Arial;color:black'>PICDEM is a trademark of
+Microchip Technology Incorporated in the <st1:country-region w:st="on"><st1:place
+ w:st="on">U.S.A.</st1:place></st1:country-region> and other countries.</span></i></span><i><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span class=GramE><i><span
+style='font-size:10.0pt;font-family:Arial;color:black'>Microsoft, Windows, and
+Windows Vista are either registered trademarks or trademarks of Microsoft
+Corporation in the <st1:country-region w:st="on"><st1:place w:st="on">United
+  States</st1:place></st1:country-region> and/or other countries.</span></i></span><i><span
+style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></i></p>
+
+<p class=MsoPlainText><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
